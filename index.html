@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="./assest/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf">
+    <link rel="stylesheet" href="./assest/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/main.css">
+    <link rel="stylesheet" href="./assest/base.css">
+    <link rel="stylesheet" href="./assest/grid.css">
+    <meta data-react-helmet="true" property="og:title" content="Design Bags for Women | NET-A-PORTER">
+    <title>Design Bags for Women</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list header__navbar-none ">
+                        <li class="header__navbar-item header__navbar-user">
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item fl--header">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
+                            <span class="header__navbar-language">
+                                English
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list header__logo">
+                        <a href="" class="header__navbar-logo">
+                            NET - A - PORTER
+                        </a>
+                    </ul>
+                    <ul class="header__navbar-list header__margin-none">
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <span class="header__navbar-search-text">Search</span>
+                        </li>
+                        <li class="header__navbar-item header__navbar-wlst">
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-regular fa-star"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-shpping">
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                </div>
+                <div class="header__primary">
+                    <div class="header__navbar-primary">
+                        <div class="header__navbar-category-frst">
+                            <div class="header-category-link-frst">
+                                <a href="" class="header-category-link header-category-link-frst">
+                                    <span class="header-category-sale">
+                                        Sale
+                                    </span>
+                                </a>    
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-category-scd1 header__navbar-category">
+                            <div class="header-category-link-scd">
+                                <a href="" class="header-category-link">
+                                    New In
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-category header__navbar-category-scd2">
+                            <div class="header-category-link-scd1">
+                                <a href="" class="header-category-link">
+                                    Shop By
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-category header__navbar-category-scd3">
+                            <div class="header-category-link-scd2">
+                                <a href="" class="header-category-link">
+                                    Designers
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-category header__navbar-category-scd4">
+                            <div class="header-category-link-scd3">
+                                <a href="" class="header-category-link">
+                                    Bags
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="header__container-content">
+                <div class="header__container-title">
+                    <h2 class="header__title">Bags</h2>
+                </div>
+                <div class="header__container-copy">
+                    <div class="header__container-copy1">
+                        <p>Explore our collection of women's designer bags. With designs including 
+                            <a class="" href="#">tote bags</a>
+                            , designer 
+                            <a class="" href="#">shoulder bags</a>
+                            , leather 
+                            <a class="" href="#">clutches</a> 
+                            and 
+                            <a class="" href="#">backpacks</a>
+                            , the choices are endless. Whether you need a designer clutch for a special event or a designer purse for your everyday look, we're sure you'll find a designer handbag to suit you in our range.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-heading">
+                <div class="productlisting__refine">
+                    <div class="productlisting__total">
+                        <span class="productlisting__totalProdcuts">521 Results</span>
+                    </div>
+                    <div class="productlisting__orderby">
+                        <span class="productlisting__orderbyProducts">
+                            Recommended
+                            <i class="productlisting__icon fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3">
+                        <div class="category">
+                            <div class="category-item">
+                                <div class="category-title">
+                                    category
+                                    <i class="category__icon fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="category-subtitle">Sneakers</div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-title">
+                                    designer
+                                    <i class="category__icon fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="category-subtitle">ALL</div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-title">
+                                    color
+                                    <i class="category__icon fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="category-subtitle">ALL</div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col l-9 category--prt">
+                        <div class="row">
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag1.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">THE ROW</span>
+                                            <span class="product__content-text">N/S Park large suede tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag2.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">ALEXANDER MCQUEEN</span>
+                                            <span class="product__content-text">Suede-trimmed leather exaggerated-sole sneakers</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,450</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag3.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">GUCCI</span>
+                                            <span class="product__content-text">Horsebit embellished quilted leather shoudler bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,890</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag4.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">JW ADNERSON</span>
+                                            <span class="product__content-text">Chain-embellished leather-trimmed canvas shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,150</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag5.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">THE ROW</span>
+                                            <span class="product__content-text">N/S Park large textured-leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,390</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag6.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">FERRAGAMO</span>
+                                            <span class="product__content-text">HUg embellished large leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag7.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">TOTEME</span>
+                                            <span class="product__content-text">T-Lock leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,390</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag8.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">THE ROW</span>
+                                            <span class="product__content-text">90s small nubuck tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,220</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag9.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">SAINT LAURENT</span>
+                                            <span class="product__content-text">Quilted leather drawstring shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,600</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag10.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">LOEWE</span>
+                                            <span class="product__content-text">Flamenco mini leather clutch</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,990</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag11.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">BOTTEGA VENETA</span>
+                                            <span class="product__content-text">Andiamo embellished intrecciato leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$7,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag12.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">JACQUEMUS</span>
+                                            <span class="product__content-text">Le Bambino Long patent-leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$975</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag13.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">BALENCIAGA</span>
+                                            <span class="product__content-text">Hourglass leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,600</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag14.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">LOEWE</span>
+                                            <span class="product__content-text">Puzzle small textured-leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,150</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="product-item">
+                                    <div class="product__image-item">
+                                        <img src="./image/bag15.png" alt="" class="product-img">
+                                        <div class="product__content">
+                                            <span class="product__heading">JACQUEMUS</span>
+                                            <span class="product__content-text">Le Chiquito Moyen medium patent-leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$920</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="#" class="scrolltotop">
+                <div class="scrolltotop__icon">
+                    <i class="scrolltotop__iconup fa-solid fa-arrow-up"></i>
+                </div>
+            </a>
+            <div class="ftr-pagination">
+                <div class="pagination__wrapper">
+                    <div class="pagination__left ">
+                        <a href="" class="pagination__link">
+                            <span class="pagination-text pagination__left--disabled">
+                                <i class="pagination-icon fa-solid fa-angle-left"></i>
+                                Previous
+                            </span>
+                        </a>
+                    </div>
+                    <div class="pagination__currentpage">
+                        <span class="pagination-currentpage">Page 1 of 8</span>
+                    </div>
+                    <div class="pagination__right">
+                        <a href="" class="pagination__link">
+                            <span class="pagination-text pagination__right">
+                                Next
+                                <i class="pagination-icon fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__layout-area">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="footer__layout">
+                                <div class="account__untility">
+                                    <h4 class="heading2 heading2--secondary">Enjoy 15% off your first order</h4>
+                                    <div class="account__untility-details">
+                                        <div class="account__untility-text">
+                                            <p class="paragraph">Claim your exclusive discount code when you subscribe to our emails. Terms and conditions apply</p>
+                                        </div>
+                                        <!-- <label for="" class="account__untility-email-label">Email Address</label> -->
+                                        <div class="registrationform">
+                                            <div class="registrationform__email">
+                                                <input class="registration__email-text" type="text" placeholder="your@address.com">
+                                            </div>
+                                            <div class="buttonsubmit">
+                                                <button class="registration__button-submit" data-target="email-registration-submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="socials-container">
+                                    <ul class="socialicon">
+                                        <li class="socialicon__item">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </li>
+                                        <li class="socialicon__item">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </li>
+                                        <li class="socialicon__item">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li class="socialicon__item">
+                                            <i class="fa-brands fa-square-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="contactpane">
+                                <h4 class="heading">CALL US</h4>
+                                <div class="contact">
+                                    <div class="contact__telephone">
+                                        <a href="" class="contact__telephone-link">+84 393 400 682</a>
+                                    </div>
+                                    <div class="contact__email">
+                                        <a href="" class="contact__email-link">sangv906@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="localswitch">
+                                <h4 class="heading">LOCATION & LANGUAGE</h4>
+                                <div class="localswitch--lg">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
+                                    <span class="localswitch__language">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerlink__ftr">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="row no-gutters">
+                                <div class="col l-3">
+                                    <div class="footer__link">
+                                        <h3 class="footer__heading">customer care</h3>
+                                        <ul class="footer__link-list">
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Track on Order</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Create an Return</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">FAQs</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Contact Us</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Payment</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Primary Policy</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Cookie Policy</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Cookie Center</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Terms & Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-3 l-o-3">
+                                    <div class="footer__link">
+                                        <h3 class="footer__heading">about us</h3>
+                                        <ul class="footer__link-list">
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">About NET-A-PORTER</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">People & Planet</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Our Loyalty Program</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Adversting</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Affiliates</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Careers</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">NET-A-PORTER Apps</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Student Discount</a>
+                                            </li>
+                                            <li class="footer__link-item">
+                                                <a href="" class="footerlink__link">Modern Slavery Statement</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="siteswitch">
+                                <div class="siteswitch2">
+                                    <h3 class="siteswitch__heading">mr porter</h3>
+                                    <div class="siteswitch__text">
+                                        <p class="siteswitch__texts">Shop from over 500 of the world's finest luxury designer brands & be dressed for any occasion</p>
+                                        <div class="siteswitch__link">
+                                            <a href="#" class="siteswitchlink__link">Visit MRPORTER.COM</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="paymentcards">
+                                    <h3 class="paymentcards__heading">net-a-porter accepts</h3>
+                                    <div class="paymentcards__wallet">
+                                        <i class="paymentcards__icon fa-brands fa-cc-paypal"></i>
+                                        <i class="paymentcards__icon fa-brands fa-cc-visa"></i>
+                                        <i class="paymentcards__icon fa-brands fa-cc-mastercard"></i>
+                                        <i class="paymentcards__icon fa-brands fa-cc-amex"></i>
+                                        <i class="paymentcards__icon fa-brands fa-cc-apple-pay"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

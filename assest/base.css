@@ -1,0 +1,70 @@
+:root{
+    --white-color: #fff;
+    --header-height: 110px;
+    --navbar-height: 45px;
+    --text-color-header: #fcfaf3;
+    --text-color: #000;
+    --text-color-product-heading: #656565;
+    --text-color-footer: rgb(145,138,133);
+    --categorymenu__header: 13px/17px 'AkkuratPro', sans-serif;
+    --categorymenus__header: 14px/18px 'AkkuratPro',Sans-Serif;
+    --color-category: rgba(17, 17, 17, 0.855);
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.grid__column-3{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+}
+
+.grid__column-2-4{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+}
+
+.grid__column-9{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 66.666775%;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
