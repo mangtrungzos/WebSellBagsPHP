@@ -117,6 +117,7 @@
     color: var(--text-color-header);
     font-size: 2.5rem;
     text-decoration: none;
+    font: normal 26px/35px 'Chronicle Display';
 }
 
 .header__primary{
@@ -138,8 +139,8 @@
 .header__navbar-category-frst,
 .header__navbar-category-scd,
 .header__navbar-category{
-    margin: 0 15px;
-    padding: 0 0 16px;
+    margin: 24px 15px;
+    padding: 0 0 14px;
 }
 
 .header__navbar-category-frst:hover{
@@ -523,10 +524,11 @@
     letter-spacing: 1px;
     font-family: serif;
     color: #000000;
-    font-weight: 450;
-    font-size: 2.5rem;
+    /* font-weight: 450;
+    font-size: 2.5rem; */
     margin: 8px 0;
     display: block;
+    font: normal 24px/30px 'Chronicle Display';
 }
 
 .header__container-copy1{
