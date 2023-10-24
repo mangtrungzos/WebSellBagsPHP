@@ -67,4 +67,6 @@ html{
     }
 }
 
-
+.upperCase{
+    text-transform: uppercase;
+}

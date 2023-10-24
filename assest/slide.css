@@ -1,0 +1,223 @@
+.container{ 
+  display: grid;
+}
+.slide-show{
+  width: 550px;
+  overflow: hidden;
+  position: relative;
+}
+
+.list-images{
+  display: flex;
+  transition: 0.5s;
+}
+
+
+.btn:hover{
+  opacity: 1;
+}
+
+.btn{
+  color: #999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 2px;
+  opacity: .6;
+}
+
+.btn i{
+  font-size: 16px;
+  padding: 13px;
+}
+
+.btn-left{
+  left: 0;
+}
+
+.btn-right{
+  right: 0;
+}
+
+.imgdetails{
+  height: 863px;
+  width: 550px;
+}
+
+.content{
+  place-self: center; 
+  margin-top: 33px;
+  justify-content: center;
+  display: grid;
+  max-width: 1150px;
+
+}
+
+.productDetail__selectInfo{
+  place-self: center;
+  display: grid;
+  align-self: flex-start;
+  grid-template-columns: auto;
+}
+
+.productDetails{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 170px;
+}
+
+.singlebadge{
+  font: 12px/18px 'AkkuratPro', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #656565;
+}
+
+.productInfomation a{
+  text-decoration: none;
+}
+
+.productInfomation h1{
+  font: 30px/30px 'Chronicle Display', serif;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: #111;
+}
+
+.productInfomation__name{
+  font: 16px/24px 'ChronicleText',Georgia,Serif;
+  font-weight: 400;
+}
+
+.priceProduct{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.productDetail__colours{
+  color: #656565;
+  font: 14px/18px 'AkkuratPro',Sans-Serif;
+  letter-spacing: .14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.productDetail__colours--span{
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.productDetail__colours--heading{
+  letter-spacing: 1px;
+}
+
+.sizelabel{
+  margin-bottom: 20px;
+  font-size: 14px;
+} 
+
+.onesize__label{
+  color: #656565;
+  font-weight: 500;
+}
+
+.onesize__label--one{
+  color: #111;
+}
+
+.productDetail__addbButton--addb{
+  margin-bottom: 16px;
+  width: 410px;
+}
+
+.button__addToBag{
+  width: 410px;
+  height: 40px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+  border-radius: 2px;
+} 
+
+.productDetail__addButton--wl{
+  margin-bottom: 16px;
+  width: 410px;
+}
+
+.button__addTowl{
+  width: 410px;
+  height: 40px;
+  border: none;
+  border: 1px solid #111;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.addButton__wlStar{
+  float: left;
+  padding-left: 10px;
+}
+
+
+.according__sectionContent{
+  width: 410px;
+  font: 16px/24px 'ChronicleText',Georgia,Serif;
+  letter-spacing: 1.1px;
+  font-weight: 400;
+}
+
+.according__down{
+  padding-right: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.editorAccording{
+  font: 14px/18px 'AkkuratPro',Sans-Serif;
+  letter-spacing: 1px;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.partNumber{
+  display: flex;
+  font-size: 13.6px;
+  letter-spacing: 1px;
+}
+
+.part__number{
+  margin-left: 10px;
+  letter-spacing: .8px;
+}
+
+.shopMore__heading{
+  font: 12px/16px 'AkkuratPro',Sans-Serif;
+  letter-spacing: .12px;
+  font-weight: 600;
+}
+
+.shopMore1__link{
+  text-decoration: none;
+  color: #111;
+  margin-right: 7px;
+  font: 14px/18px 'AkkuratPro',Sans-Serif;
+  letter-spacing: .14px;
+  font-weight: 500;
+  color: #656565;
+}
