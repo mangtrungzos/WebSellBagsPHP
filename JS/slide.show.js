@@ -5,18 +5,6 @@ const btnLeft = document.querySelector('.btn-left')
 const btnRight = document.querySelector('.btn-right')
 let current = 0
 
-// const handleChangeSlide = () => {
-//   if (current == length - 1) {
-//     current = 0
-//     let width = imgs[0].offsetWidth
-//     listImage.style.transform = `translateX(0)`
-//   } else{
-//     let width = imgs[0].offsetWidth
-//     listImage.style.transform = `translateX(${width * -1 * current}px)`
-//   }
-  
-// }
-
 const handleChangeSlide = () => {
   const width = imgs[0].offsetWidth;
   const maxTranslateX = (length - 1) * width * -1; // Giới hạn tối đa của translateX

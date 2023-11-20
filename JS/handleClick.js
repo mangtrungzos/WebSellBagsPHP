@@ -3,11 +3,6 @@ function overlayOff() {
     overlay.style.display = 'none'
 }
 
-// function searchBarOff() {
-//     const searchbar = document.getElementById('searchBar')
-//     searchbar.style.display = 'none'
-// }
-
 const searchCLick = document.getElementById('searchIcon');
 searchCLick.addEventListener('click', () => {
     const searchbar = document.querySelector('.searchOverlay');

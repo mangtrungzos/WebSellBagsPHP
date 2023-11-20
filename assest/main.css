@@ -1708,6 +1708,139 @@
     width: 29%;
 }
 
+.picture{
+    margin-top: .8px;
+}
+
+.distance{
+    padding-top: 48px;
+    border: none;
+    margin: 0;
+}
+
+.text-picture{
+    margin: 0 0 8px;
+    text-align: center;
+    line-height: 1.25;
+    font-weight: 500;
+    font-size: 48px;
+    font-family: 'Chronicle Display', 'Times New Roman', serif, sans-serif;
+}
+
+.content-p{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'ChronicleText', Georgia, Serif, sans-serif, 'MSung PRC Medium';
+    direction: ltr;
+    color: rgba(17,17,17,1);
+    text-align: center;
+    font-weight: 500;
+}
+
+.aw{
+    text-align: center;
+}
+
+.aw-span{
+    border-bottom: 1px solid rgba(17,17,17,1);
+    line-height: 1.2857142857142858;
+    font-size: 14px;
+    font-family: 'AkkuratPro', sans-serif, 'MSung PRC Medium';
+    color: rgba(17,17,17,1);
+    font-weight: 500;
+}
+
+.aw-span:hover{
+    color: rgba(101,101,101,1);
+    cursor: pointer;
+}
+
+.br{
+    background-color: rgba(203,203,203,1);
+    height: 1px;
+    border: 0;
+}
+
+.hr{
+    margin: 0 40px;
+    max-width: calc(100% - 40px);
+
+}
+
+.sl-shw{
+    margin-top: 60px;
+}
+
+.sl-shws{
+    display: flex;
+    justify-content: center;
+}   
+
+.col1{
+    width: 400px;
+}
+
+.col2{
+    display: flex;
+}
+
+.newin-h4{
+    font-family: 'AkkuratPro', sans-serif, 'MSung PRC Medium';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    margin-bottom: 4px;
+    opacity: 1;
+    color: rgba(101,101,101,1);
+}
+
+.newin-h3{
+    font-size: 48px;
+    font-family: 'Chronicle Display', 'Times New Roman', serif, sans-serif, 'MSung PRC Medium';
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.newin-p{
+    font-size: 16px;
+    font-family: 'ChronicleText', Georgia, Serif, sans-serif, 'MSung PRC Medium';
+    font-weight: 500;
+
+}
+
+.shop-newin__link{
+    text-decoration: none;
+    
+}
+
+.shop-newin__btn{
+    color: #f0f0f0;
+    font-size: 14px;
+    line-height: 1.2857142857142858;
+    border: 1px solid rgba(17,17,17,1);
+}
+
+.shop-newin__btn{
+    text-align: center;
+    max-width: 326px;
+    cursor: pointer;
+    height: 40px;
+    background-color: rgba(17,17,17,1);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.sl-shws__prt{
+    display: flex;
+    flex-basis: calc(66.66666666666667% - 24px);
+}
+
+.prct-img{
+    padding: 0 12px;
+}
+
+
 .footerlayout{
     display: flex;
     flex-direction: flex-start;
