@@ -8,9 +8,9 @@
     grid-template-columns: auto auto auto;
 }
 
-/* .border-clr{
-    border-color: red;
-} */
+*{
+    -webkit-overflow-scrolling: touch;
+}
 
 .border-selct{
     border-left: 3px solid #111;
@@ -1718,6 +1718,15 @@
     margin: 0;
 }
 
+.picture:hover,
+.picture1:hover{
+    cursor: pointer;
+}
+
+.text{
+    margin-top: 10px;
+}
+
 .text-picture{
     margin: 0 0 8px;
     text-align: center;
@@ -1762,9 +1771,8 @@
 }
 
 .hr{
-    margin: 0 40px;
-    max-width: calc(100% - 40px);
-
+    margin: 0 97px;
+    width: calc(100% - 208px);
 }
 
 .sl-shw{
@@ -1778,10 +1786,6 @@
 
 .col1{
     width: 400px;
-}
-
-.col2{
-    display: flex;
 }
 
 .newin-h4{
@@ -1831,15 +1835,168 @@
     width: 100%;
 }
 
+.col2{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    scroll-behavior: smooth;
+}
+
 .sl-shws__prt{
     display: flex;
-    flex-basis: calc(66.66666666666667% - 24px);
+    scroll-behavior: auto;
 }
 
 .prct-img{
     padding: 0 12px;
 }
 
+.prct-link{
+    text-decoration: none;
+    color: #111111;
+}
+
+.sl-shws__prt .prct-link{
+    width: calc(100% / 4);
+    pointer-events: none;
+}
+
+.prct-tittle{
+    font-size: 14.5px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.icon-awRight{
+    position: absolute;
+    background-color: rgb(251,250,250);
+    padding: 12px;
+    top: 37%;
+    right: 0;
+    opacity: .9;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-awRight{
+    color: rgb(102,102,101);
+    font-size: 20px;
+}
+
+.icon-awLeft{
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(251,250,250);
+    padding: 12px;
+    top: 37%;
+    left: 0;
+    opacity: .9;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-awLeft:hover, .icon-awRight:hover {
+    transform: scale(1.1);
+}
+
+.sl-prt {
+    overflow: hidden;
+}
+
+.sl-shws__prt {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sl-shws__prt img {
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.sl-shws__prt img:hover{
+    cursor: pointer;
+}
+
+.icon-awLeft{
+    color: rgb(102,102,101);
+    font-size: 20px;
+    /* display: none; */
+}
+
+
+.poster{
+    margin-top: 80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.poster-tittle{
+    position: absolute;
+    top: -40px;
+    left: 340px;
+}
+
+.poster-model{
+    display: flex;
+    justify-content: center;
+    /* max-width: 1300px; */
+    /* overflow: hidden; */
+}
+
+.poster-model__pc img{
+    width: 900px;
+    height: 440px;
+}
+
+.poster-content{
+    margin-left: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.poster-h1{
+    font-family: 'Chronicle Display', 'Times New Roman', serif, sans-serif;
+    color: rgba(17,17,17,1);
+    line-height: 1.25;
+    font-size: 48px;
+    font-weight: 500;
+    direction: ltr;
+    margin: 11px 0 0;
+}
+
+.poster-h6{
+    font-family: 'Chronicle Display', 'Times New Roman', serif, sans-serif;
+    color: rgba(17,17,17,1);
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 0;
+    font-weight: 500;
+}
+
+.poster-p{
+}
+
+.poster-h2{
+    font-size: 24px;
+    line-height: 1.25;
+    font-family: 'Chronicle Display', 'Times New Roman', serif, sans-serif;
+    color: rgba(17,17,17,1);
+    font-weight: 500;
+    overflow-wrap: break-word;
+    width: 500px;
+}
+
+.poster-span{
+    line-height: 1.2857142857142858;
+    font-size: 14px;
+    font-family: 'AkkuratPro', sans-serif, 'MSung PRC Medium';
+    font-weight: 500;
+    color: rgba(17,17,17,1);
+    border-bottom: 1px solid rgba(17,17,17,1);
+}
 
 .footerlayout{
     display: flex;
