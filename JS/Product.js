@@ -47,11 +47,11 @@ function updateCart() {
         } else {
             console.error(`Invalid price: ${item.name}`);
         }
-        totalDiv.innerHTML = `<div class="priceTotalAll">TOTAL <span class="valuePriceAll">${totalValue.toLocaleString('en-US')}</span></div>`
+        totalDiv.innerHTML = `<div class="priceTotalAll">TOTAL <span class="valuePriceAll">$${totalValue.toLocaleString('en-US')}</span></div>`
         console.log('Total Price:', totalValue);
     });
 
-}
+}   
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('Cart before totalPrice:', JSON.parse(localStorage.getItem('cart')) || []);

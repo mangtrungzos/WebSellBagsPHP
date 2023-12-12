@@ -18,7 +18,7 @@
     <div class="app">
         <header class="header">
             <div class="grid wide">
-                <nav class="header__navbar">
+                <!-- <nav class="header__navbar">
                     <ul class="header__navbar-list header__navbar-none ">
                         <li class="header__navbar-item header__navbar-user">
                             <a href="" class="header__navbar-icon-link">
@@ -131,7 +131,7 @@
                             </div>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 
                 </div>
                 <div class="header__primary">
@@ -633,7 +633,7 @@
                     <div class="slide-show">
                         <div class="list-images">
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/row/1.png" alt="" >
+                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/row/1.png" alt="" >
                             </div>
                             <div class="img-detail">
                                 <img class="imgdetails" src="../image/ProductDetail/row/2.png" alt="" >
@@ -675,7 +675,7 @@
                             </div>
                             <div class="productInfomation">
                                 <a href="#">
-                                    <h1>THE ROW</h1>
+                                    <h1 class="productInfomation--brand">THE ROW</h1>
                                 </a>
                                 <p class="productInfomation__name">N/S Park large suede tote</p>
                             </div>
@@ -698,8 +698,8 @@
                             </div>
                             <div class="button__wrapper">
                                 <div class="productDetail__addbButton--addb">
-                                    <button class="button__addToBag">
-                                        Add to Bag
+                                    <button class="button__addToBag" onclick="addToCart()">
+                                        Add to Cart
                                     </button>
                                 </div>
                                 <div class="productDetail__addButton--wl">
@@ -920,7 +920,8 @@
     </div>
     
     <script src="../JS/handleClick.js"></script>
-    <script src="../JS/addToCart.js"></script>
     <script src="../JS/slide.show.js"></script>
+    <script src="../JS/addToCart.js"></script>
+
 </body>
 </html>

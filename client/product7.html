@@ -722,7 +722,7 @@
                                     </div>
                                 </li>
                                 <li class="header__navbar-item header__navbar-shpping">
-                                    <a href="" class="header__navbar-icon-link">
+                                    <a href="./pages/cart/cart.html" class="header__navbar-icon-link">
                                         <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
                                     </a>
                                     <div class="header__shpping">
@@ -749,7 +749,7 @@
                     <div class="slide-show">
                         <div class="list-images">
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/gucci/1.png" alt="" >
+                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/gucci/1.png" alt="" >
                             </div>
                             <div class="img-detail">
                                 <img class="imgdetails" src="../image/ProductDetail/gucci/2.png" alt="" >
@@ -794,7 +794,7 @@
                             </div>
                             <div class="productInfomation">
                                 <a href="#">
-                                    <h1>GUCCI</h1>
+                                    <h1 class="productInfomation--brand">GUCCI</h1>
                                 </a>
                                 <p class="productInfomation__name">Ophidia embellished textured leather-trimmed printed coated-canvas shoulder bag</p>
                             </div>
@@ -817,8 +817,8 @@
                             </div>
                             <div class="button__wrapper">
                                 <div class="productDetail__addbButton--addb">
-                                    <button class="button__addToBag">
-                                        Add to Bag
+                                    <button class="button__addToBag" onclick="addToCart()">
+                                        Add to Cart
                                     </button>
                                 </div>
                                 <div class="productDetail__addButton--wl">
@@ -1040,5 +1040,6 @@
     
     <script src="../JS/handleClick.js"></script>
     <script src="../JS/slide.show.js"></script>
+    <script src="../JS/addToCart.js"></script>
 </body>
 </html>
