@@ -27,7 +27,7 @@
 
 .header__navbar-overflow{
     position: fixed;
-    top: 100px;
+    top: 529px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -81,6 +81,8 @@
     color: var(--text-color-header);
     font-size: 1.4rem;  
     margin: 0 20px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -122,9 +124,10 @@
 
 .header__navbar-logo{
     color: var(--text-color-header);
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
-    font: 22px/32px "Gill Sans", sans-serif;
+    /* font: 22px/32px "Gill Sans", sans-serif; */
+    font-family: "Gill Sans", sans-serif;
 }
 
 /*----------- Category-------------  */
@@ -527,7 +530,7 @@
 /*------------ Overlay ------------------  */
 .header__navbar-overflow{
     position: fixed;
-    top: 134px;
+    top: 529px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -654,7 +657,7 @@
 }
 
 .header__primary{
-    margin-top: 28.6px;
+    margin-top: -5px;
     position: relative;
 }
 
@@ -850,7 +853,7 @@
     width: 435px;
     height: 470px;
     top: 60px;
-    right: 20px;
+    right: 150px;
     box-shadow: 0 2px 4px #e5e5e5;
     display: none;
     z-index: 1;
@@ -1042,11 +1045,9 @@
 
 .header__container-content{
     max-width: 100%;
-    /* text-align: center; */
     padding: 1px 0;
     border-bottom: 1px solid #83838363;
-    /* margin: 0 35px 40px 35px; */
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1070,9 +1071,10 @@
     letter-spacing: 1px;
     font-family: serif;
     color: #000000;
-    margin: 8px 0;
+    margin: 15px 0;
     display: block;
     font: normal 24px/30px 'Chronicle Display';
+    text-align: center;
 }
 
 .header__container-copy{
@@ -1086,7 +1088,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font:  14px/21px 'ChronicleText',Georgia,Serif;
-    margin: 5px 0 0 0;
+    margin: 5px 0 25px 0;
     width: 550px;
     height: 100px;
 }
