@@ -1,15 +1,19 @@
 <?php
-$host = "localhost";
-$dbname = "WebSellBags";
-$username = "root";
-$password = "Sangvu30122002@";
 
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    // Set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+if (!isset($_SESSION)) {
+    session_start();
+}
+define ('LOCALHOST', 'localhost');
+define('DB_NAME', 'WebSellBags');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'Sangvu30122002@');
+$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD); 
+if (!$conn) {
+    die('Connection failed: ' . mysqli_connect_error());
+} 
+
+$db_select = mysqli_select_db($conn, DB_NAME);
+if (!$db_select) {
+    die('Database selection failed: ' . mysqli_error($conn));
 }
 ?>

@@ -1,4 +1,5 @@
 <?php include("./config/constants.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,22 +41,24 @@
                                             <h2>MY ACCOUNT</h2>
                                         </header>
                                         <div class="header__account-inf">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Email Address</label>
-                                            </p>
-                                            <input type="text" class="header__account-email">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Password</label>
-                                            </p>
-                                            <input type="text" class="header__account-password">
-                                            <button class="header__account-signin">Sign in</button>
-                                            <div class="header__account-fgpwd">
-                                                <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                            </div>
-                                            <div class="header__account-ftr">
-                                                <span class="account-ftr">Don't have an account?</span>
-                                                <a href="<?php echo SITEURLREGISTER?>register.php" class="account-ftr-link">Register now</a>
-                                            </div>
+                                            <form action="<?php echo SITEURLCONTROLLER?>loginAcc.php" method="POST">
+                                                <p class="text">
+                                                    <label for="username" class="header__account-label">Email Address</label>
+                                                </p>
+                                                <input type="text" id="username" name="username" class="header__account-email">
+                                                <p class="text">
+                                                    <label for="password" class="header__account-label">Password</label>
+                                                </p>
+                                                <input type="text" id="password" name="password" class="header__account-password">
+                                                <button type="submit" class="header__account-signin">Sign in</button>
+                                                <div class="header__account-fgpwd">
+                                                    <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                                </div>
+                                                <div class="header__account-ftr">
+                                                    <span class="account-ftr">Don't have an account?</span>
+                                                    <a href="<?php echo SITEURLREGISTER?>register.php" class="account-ftr-link">Register now</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </li>
@@ -690,7 +693,7 @@
                                     <a href="" class="header__navbar-icon-link">
                                         <i class="header__navbar-icon fa-regular fa-star"></i>
                                     </a>
-                                    <div class="header__wlst">
+                                    <div class="header__wlst" style="right: 72px">
                                         <header class="header__wlst-header">
                                             <h2>WITH LIST</h2>
                                         </header>

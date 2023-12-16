@@ -1,4 +1,6 @@
-<?php include("../config/constants.php");?>
+<?php include("../controller/registerAcc.php"); ?>
+<?php include("../config/constants.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,22 +41,24 @@
                                             <h2>MY ACCOUNT</h2>
                                         </header>
                                         <div class="header__account-inf">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Email Address</label>
-                                            </p>
-                                            <input type="text" class="header__account-email">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Password</label>
-                                            </p>
-                                            <input type="text" class="header__account-password">
-                                            <button class="header__account-signin">Sign in</button>
-                                            <div class="header__account-fgpwd">
-                                                <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                            </div>
-                                            <div class="header__account-ftr">
-                                                <span class="account-ftr">Don't have an account?</span>
-                                                <a href="<?php echo SITEURLREGISTER?>register.php" class="account-ftr-link">Register now</a>
-                                            </div>
+                                            <form action="<?php echo SITEURLCONTROLLER?>loginAcc.php" method="POST">
+                                                <p class="text">
+                                                    <label for="" class="header__account-label">Email Address</label>
+                                                </p>
+                                                <input type="text" class="header__account-email">
+                                                <p class="text">
+                                                    <label for="" class="header__account-label">Password</label>
+                                                </p>
+                                                <input type="text" class="header__account-password">
+                                                <button class="header__account-signin">Sign in</button>
+                                                <div class="header__account-fgpwd">
+                                                    <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                                </div>
+                                                <div class="header__account-ftr">
+                                                    <span class="account-ftr">Don't have an account?</span>
+                                                    <a href="#" class="account-ftr-link">Register now</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </li>
@@ -739,35 +743,35 @@
                 <div class="form-register">
                     <div class="rs-tittle">Register</div>
                     <div class="register-account">
-                        <form action="">
+                        <form action="<?php echo SITEURLCONTROLLER; ?>registerAcc.php" method="POST" >
 
                             <p class="text">
-                                <label for="" class="rs-email">Email</label>
+                                <label for="email" class="rs-email">Email</label>
                             </p>
-                            <input class="form-email" type="text" placeholder="" required>
+                            <input class="form-email" id="email" name="email" type="text" placeholder="" required>
                             <p class="text">
-                                <label for="" class="rs-pws">Password</label>
+                                <label for="password" class="rs-pws">Password</label>
                             </p>
-                            <input class="form-pws" type="text" placeholder="" required>
+                            <input class="form-pws" type="password" id="password" name="password" required>
     
                             <div class="psw-p">
                                 Your password must be eight characters or more and contain both an uppercase letter and a number
                             </div>
                             <p class="text">
-                                <label for="" class="rs-name1">First name</label>
+                                <label for="first_name" class="rs-name1">First name</label>
                             </p>
-                            <input class="form-name1" type="text" required>
+                            <input class="form-name1" id="first_name" name="first_name" type="text" required>
                             <p class="text">
-                                <label for="" class="rs-name2">Last name</label>
+                                <label for="last_name" class="rs-name2">Last name</label>
                             </p>
-                            <input class="form-name2" type="text" required>
+                            <input class="form-name2" id="last_name" name="last_name" type="text" required>
                             <div class="date-rs">
                                 <p class="text">
-                                    <label for="" class="rs-date">Date of birth (optional)</label>
+                                    <label for="dob_month" class="rs-date">Date of birth (optional)</label>
                                 </p>
-                                <input class="date-rgs" type="text" placeholder="MM" required>
-                                <input class="date-rgs" type="text" placeholder="DD" required>
-                                <input class="date-rgs" type="text" placeholder="YYYY" required>
+                                <input class="date-rgs" type="text" id="dob_month" name="dob_month" placeholder="MM" required>
+                                <input class="date-rgs" type="text" id="dob_day" name="dob_day" placeholder="DD" required>
+                                <input class="date-rgs" type="text" id="dob_year" name="dob_year" placeholder="YYYY" required>
                             </div>
                             <div class="register-conset">
                                 <button class="check-terms" type="checked"></button>
@@ -956,5 +960,6 @@
     <script src="./JS/hover.js"></script>
     <script src="./JS/handleClick.js"></script>
     <script src="../../JS/slideShowPrct.js"></script>
+    
 </body>
 </html>

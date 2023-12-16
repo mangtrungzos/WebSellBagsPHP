@@ -738,6 +738,10 @@
         <div class="container">
             <div class="content">
                 <div class="productDetails">
+                    <!-- <form action="addProuct.php" method="POST">
+
+
+                    </form> -->
                     <div class="slide-show">
                         <div class="list-images">
                             <div class="img-detail">

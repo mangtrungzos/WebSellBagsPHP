@@ -1,4 +1,6 @@
 <?php include("../config/constants.php"); ?>
+<?php include("../controller/loginAcc.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,7 @@
 </head>
 <body>
     <div class="app">
-        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
+        <img src="../image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
         <header class="header">
             <div class="grid wide">
                 <div class="header__primary">
@@ -35,27 +37,29 @@
                                         <i class="header__navbar-icon fa-regular fa-user"></i>
                                     </a>
                                     <div class="header__account">
-                                        <header class="header__account-header">
-                                            <h2>MY ACCOUNT</h2>
-                                        </header>
-                                        <div class="header__account-inf">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Email Address</label>
-                                            </p>
-                                            <input type="text" class="header__account-email">
-                                            <p class="text">
-                                                <label for="" class="header__account-label">Password</label>
-                                            </p>
-                                            <input type="text" class="header__account-password">
-                                            <button class="header__account-signin">Sign in</button>
-                                            <div class="header__account-fgpwd">
-                                                <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                        <form action="<?php echo SITEURLCONTROLLER?>loginAcc.php" method="POST">
+                                            <header class="header__account-header">
+                                                <h2>MY ACCOUNT</h2>
+                                            </header>
+                                            <div class="header__account-inf">
+                                                <p class="text">
+                                                    <label for="username" class="header__account-label">Email Address</label>
+                                                </p>
+                                                <input type="text" id="username" name="username" class="header__account-email">
+                                                <p class="text">
+                                                    <label for="password" class="header__account-label">Password</label>
+                                                </p>
+                                                <input type="text" id="password" name="password" class="header__account-password">
+                                                <button type="submit" class="header__account-signin">Sign in</button>
+                                                <div class="header__account-fgpwd">
+                                                    <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                                </div>
+                                                <div class="header__account-ftr">
+                                                    <span class="account-ftr">Don't have an account?</span>
+                                                    <a href="./client/pages/register.html" class="account-ftr-link">Register now</a>
+                                                </div>
                                             </div>
-                                            <div class="header__account-ftr">
-                                                <span class="account-ftr">Don't have an account?</span>
-                                                <a href="./client/pages/register.html" class="account-ftr-link">Register now</a>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </li>
                                 <li class="header__navbar-item fl--header">
