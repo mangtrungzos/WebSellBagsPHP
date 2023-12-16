@@ -1,3 +1,4 @@
+<?php include("../config/constants.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,142 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="../../assest/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf">
-    <link rel="stylesheet" href="../../assest/fonts/chronicle-display-cufonfonts/Chronicle Display Black.otf">
-    <link rel="stylesheet" href="../../assest/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assest/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf">
+    <link rel="stylesheet" href="../assest/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../assest/main.css">
-    <link rel="stylesheet" href="../../assest/base.css">
+    <link rel="stylesheet" href="../assest/main.css">
+    <link rel="stylesheet" href="../assest/base.css">
+    <link rel="stylesheet" href="../assest/slide.css">
     <meta data-react-helmet="true" property="og:title" content="Design Bags for Women | NET-A-PORTER">
     <title>Design Bags for Women</title>
 </head>
 <body>
     <div class="app">
+    <img src="../image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
         <header class="header">
             <div class="grid wide">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list header__navbar-none ">
-                        <li class="header__navbar-item header__navbar-user">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-user"></i>
-                            </a>
-                            <div class="header__account">
-                                <form action="">
-                                    <header class="header__account-header">
-                                        <h2>MY ACCOUNT</h2>
-                                    </header>
-                                    <div class="header__account-inf">
-                                        <p class="text">
-                                            <label for="" class="header__account-label">Email Address</label>
-                                        </p>
-                                        <input type="text" class="header__account-email" required>
-                                        <p class="text">
-                                            <label for="" class="header__account-label">Password</label>
-                                        </p>
-                                        <input type="text" class="header__account-password" required>
-                                        <button type="submit" class="header__account-signin">Sign in</button>
-                                        <div class="header__account-fgpwd">
-                                            <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                        </div>
-                                        <div class="header__account-ftr">
-                                            <span class="account-ftr">Don't have an account?</span>
-                                            <a href="" class="account-ftr-link">Register now</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item fl--header">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
-                            <span class="header__navbar-language">
-                                English
-                            </span>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar-list header__logo">
-                        <a href="./home.html" class="header__navbar-logo">
-                            NET - A - PORTER
-                        </a> 
-                        
-                    </ul>
-                    <ul class="header__navbar-list header__margin-none">
-                        <li class="header__navbar-item">
-                            <div class="searchPanel__wrapper" id="searchIcon">
-                                <button class="searchPanel__icon"></button>
-                                <span class="header__navbar-search-text">Search</span>
-                            </div>
-                            <div class="searchOverlay" id="searchBar" onclick="searchBarOff()">
-                                <div class="searchOverlay-content">
-                                    <div class="searchOverlay__control--wrapper">
-                                        <div class="searchOverlay__control">
-                                            <div class="searchOverlay__icon--search"></div> 
-                                            <div class="searchOverlay__icon">
-                                                <form class="searchOverlay__form">
-                                                    <input type="text" id="searchOverlay__input" placeholder="Search NET-A-PORTER" class="searchOverlay__input">
-                                                </form>
-                                            </div>
-                                            <div class="searchOverlay__icon--close">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="overlayOn" onclick="overlayOff()"></div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-wlst">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-star"></i>
-                            </a>
-                            <div class="header__wlst">
-                                <header class="header__wlst-header">
-                                    <h2>WITH LIST</h2>
-                                </header>
-                                <div class="header__wlst-inf">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Email Address</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-email">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Password</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-password">
-                                    <button class="header__wlst-signin">Sign in</button>
-                                    <div class="header__wlst-fgpwd">
-                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                    </div>
-                                    <div class="header__wlst-ftr header__margin-none">
-                                        <span class="wlst-ftr">Don't have an account?</span>
-                                        <a href="" class="wlst-ftr-link">Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-shpping">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
-                            </a>
-                            <div class="header__shpping">
-                                <div class="shpping-icon">
-                                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="header__shpping-icon">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path d="M48 0v48H0V0z"/><path d="M33 12v-1c0-4.963-4.037-9-9-9s-9 4.037-9 9v1H2v33h44V12H33zm-16-1c0-3.86 3.14-7 7-7s7 3.14 7 7v1H17v-1zm27 32H4V14h40v29z" fill="#000" fill-rule="nonzero"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <p class="header__shpping-text">Your Shopping Bag is empty</p>
-                                <a href="" class="header__shpping-link">Shop What's New</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
                 
                 </div>
                 <div class="header__primary">
                     <div class="header__navbar-primary">
+                        <ul class="header__navbar-list header__logo">
+                            <a href="../client/pages/home.html" class="header__navbar-logo">
+                                NET - A - PORTER
+                            </a> 
+                            
+                        </ul>
+                        <div class="header__navbar-listUser ">
+                            <ul class="header__navbar-list header__navbar-none ">
+                                <li class="header__navbar-item header__navbar-user">
+                                    <a href="" class="header__navbar-icon-link">
+                                        <i class="header__navbar-icon fa-regular fa-user"></i>
+                                    </a>
+                                    <div class="header__account">
+                                        <header class="header__account-header">
+                                            <h2>MY ACCOUNT</h2>
+                                        </header>
+                                        <div class="header__account-inf">
+                                            <p class="text">
+                                                <label for="" class="header__account-label">Email Address</label>
+                                            </p>
+                                            <input type="text" class="header__account-email">
+                                            <p class="text">
+                                                <label for="" class="header__account-label">Password</label>
+                                            </p>
+                                            <input type="text" class="header__account-password">
+                                            <button class="header__account-signin">Sign in</button>
+                                            <div class="header__account-fgpwd">
+                                                <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                            </div>
+                                            <div class="header__account-ftr">
+                                                <span class="account-ftr">Don't have an account?</span>
+                                                <a href="<?php echo SITEURLREGISTER?>register.php" class="account-ftr-link">Register now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item fl--header">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
+                                    <span class="header__navbar-language">
+                                        English
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="header__navbar-category-scd1 header__navbar-category">
                             <div class="header-category-link-scd">
-                                <a href="./index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     New In
                                 </a>
                             </div>
@@ -161,7 +91,7 @@
                                             <h4 class="categorymenu2__heading">editorial</h4>
                                             <div class="categorymenu2__parh">
                                                 <a href="" class="categorymenu2-img">
-                                                    <img src="../../image/New in/new-in.png" alt="" class="categorymenu2__img">
+                                                    <img src="../image/New in/new-in.png" alt="" class="categorymenu2__img">
                                                 </a>
                                                 <a href="" class="categorymenu2__paragraph">Your daily dose of style inspiration, Incredible Women and more</a>   
                                             </div>
@@ -171,7 +101,7 @@
                                             <h4 class="categorymenu2__heading">latest stories</h4>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="../../image/New in/fashion1.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="../image/New in/fashion1.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -183,7 +113,7 @@
                                             </div>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="../../image/New in/lifestyle.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="../image/New in/lifestyle.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -195,7 +125,7 @@
                                             </div>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="../../image/New in/fashion2.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="../image/New in/fashion2.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -213,7 +143,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="./index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Shop By
                                 </a>
                             </div>
@@ -303,7 +233,7 @@
                                     <div class="header__categorymenu3">
                                         <div class="categorymenu3-img">
                                             <a href="" class="categorymenu3__img-link">
-                                                <img src="../../image/Shop by/url2img_652f2ec751bbf.jpeg" alt="" class="categorymenu3__img">
+                                                <img src="../image/Shop by/url2img_652f2ec751bbf.jpeg" alt="" class="categorymenu3__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Time to shine</a>
@@ -315,7 +245,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd3">
                             <div class="header-category-link-scd2">
-                                <a href="./index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Designers
                                 </a>
                             </div>
@@ -410,7 +340,7 @@
                                     <div class="header__categorymenu">
                                         <div class="categorymenu4-img">
                                             <a href="" class="categorymenu4__img-link">
-                                                <img src="../../image/Designer/url2img_652f2f9fc510a.jpeg" alt="" class="categorymenu__img">
+                                                <img src="../image/Designer/url2img_652f2f9fc510a.jpeg" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Introducing vercase Icons</a>
@@ -422,7 +352,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="../../index.html" class="header-category-link">
+                                <a href="<?php echo SITEURLAD?>index.php" class="header-category-link">
                                     Bags
                                 </a>
                             </div>
@@ -515,7 +445,7 @@
                                     <div class="header__categorymenu3">
                                         <div class="categorymenu3-img">
                                             <a href="" class="categorymenu3__img-link">
-                                                <img src="../../image/Bags/Screenshot 2023-11-22 071945.png" alt="" class="categorymenu3__img">
+                                                <img src="../image/Bags/Screenshot 2023-11-22 071945.png" alt="" class="categorymenu3__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Hunting Season's enduring bags</a>
@@ -527,13 +457,13 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="./index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     People & Planet
                                 </a>
                             </div>
                             <div class="categorymenu5">
                                 <div class="header-categorymenu">
-                                    <div class="header__categorymenu header__categorymenu-wdth" style="width: 20%;">
+                                    <div class="header__categorymenu header__categorymenu-wdth">
                                         <ul class="categorymenu-list">
                                             <h4 class="categorymenu5__heading">discover</h4>
                                             <a href="" class="categorymenu__link">
@@ -577,13 +507,13 @@
                                                 <li class="categorymenu__item-general">REFLAUNT: Resale at NET-A-PORTER</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general">8 Incredible Women driving forward sustainability in their fields</li>
+                                                <li class="categorymenu__item-general line-height">8 Incredible Women driving forward sustainability in their fields</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general">The V&A's DIVA exhibition, supported by NET-A-PORTER</li>
+                                                <li class="categorymenu__item-general line-height">The V&A's DIVA exhibition, supported by NET-A-PORTER</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general">#THENETWORK: discover our global community</li>
+                                                <li class="categorymenu__item-general line-height">#THENETWORK: discover our global community</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
                                                 <li class="categorymenu__item-general">Shop NET SUSTAIN</li>
@@ -593,7 +523,7 @@
                                     <div class="header__categorymenu header__categorymenu-wdth">
                                         <div class="categorymenu-img">
                                             <a href="" class="categorymenu__img-link">
-                                                <img src="../../image/PP/url2img_652f32b413a2f.jpeg" alt="" class="categorymenu__img">
+                                                <img src="../image/PP/url2img_652f32b413a2f.jpeg" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Resell with a NET-A-PORTER</a>
@@ -605,7 +535,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="../../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Home & Gifts
                                 </a>
                             </div>
@@ -710,7 +640,7 @@
                                     <div class="header__categorymenu header__categorymenu-wdth">
                                         <div class="categorymenu-img">
                                             <a href="" class="categorymenu__img-link">
-                                                <img src="../../image/h&g/Screenshot 2023-10-23 183405.png" alt="" class="categorymenu__img">
+                                                <img src="../image/h&g/Screenshot 2023-10-23 183405.png" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">New In: Dolce & Gabbana Casa</a>
@@ -722,7 +652,7 @@
                         </div>
                         <div class="header__navbar-category-frst">
                             <div class="header-category-link-frst">
-                                <a href="./index.html" class="header-category-link header-category-link-frst active">
+                                <a href="" class="header-category-link header-category-link-frst active">
                                     <span class="header-category-sale ">
                                         EXTRA 10% off</span>
                                     </span>
@@ -730,63 +660,209 @@
                             </div>
                             
                         </div>
+                        <div class="header__navbar-wislSearch">
+                            <ul class="header__navbar-list header__margin-none">
+                                <li class="header__navbar-item">
+                                    <div class="searchPanel__wrapper" id="searchIcon">
+                                        <button class="searchPanel__icon"></button>
+                                        <span class="header__navbar-search-text">Search</span>
+                                    </div>
+                                    <div class="searchOverlay" id="searchBar" onclick="searchBarOff()">
+                                        <div class="searchOverlay-content">
+                                            <div class="searchOverlay__control--wrapper">
+                                                <div class="searchOverlay__control">
+                                                    <div class="searchOverlay__icon--search"></div> 
+                                                    <div class="searchOverlay__icon">
+                                                        <form class="searchOverlay__form">
+                                                            <input type="text" id="searchOverlay__input" placeholder="Search NET-A-PORTER" class="searchOverlay__input">
+                                                        </form>
+                                                    </div>
+                                                    <div class="searchOverlay__icon--close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="overlayOn" onclick="overlayOff()"></div>
+                                </li>
+                                <li class="header__navbar-item header__navbar-wlst">
+                                    <a href="" class="header__navbar-icon-link">
+                                        <i class="header__navbar-icon fa-regular fa-star"></i>
+                                    </a>
+                                    <div class="header__wlst">
+                                        <header class="header__wlst-header">
+                                            <h2>WITH LIST</h2>
+                                        </header>
+                                        <div class="header__wlst-inf">
+                                            <p class="text">
+                                                <label for="" class="header__wlst-label">Email Address</label>
+                                            </p>
+                                            <input type="text" class="header__wlst-email">
+                                            <p class="text">
+                                                <label for="" class="header__wlst-label">Password</label>
+                                            </p>
+                                            <input type="text" class="header__wlst-password">
+                                            <button class="header__wlst-signin">Sign in</button>
+                                            <div class="header__wlst-fgpwd">
+                                                <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                            </div>
+                                            <div class="header__wlst-ftr header__margin-none">
+                                                <span class="wlst-ftr">Don't have an account?</span>
+                                                <a href="" class="wlst-ftr-link">Register now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item header__navbar-shpping">
+                                    <a href="<?php echo SITEURLCART?>cart.php" class="header__navbar-icon-link">
+                                        <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
+                                    </a>
+                                    <div class="header__shpping">
+                                        <div class="shpping-icon">
+                                            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="header__shpping-icon">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path d="M48 0v48H0V0z"/><path d="M33 12v-1c0-4.963-4.037-9-9-9s-9 4.037-9 9v1H2v33h44V12H33zm-16-1c0-3.86 3.14-7 7-7s7 3.14 7 7v1H17v-1zm27 32H4V14h40v29z" fill="#000" fill-rule="nonzero"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p class="header__shpping-text">Your Shopping Bag is empty</p>
+                                        <a href="" class="header__shpping-link">Shop What's New</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-
-       <main class="main">
-            <div class="register">
-                <div class="form-register">
-                    <div class="rs-tittle">Register</div>
-                    <div class="register-account">
-                        <form action="">
-
-                            <p class="text">
-                                <label for="" class="rs-email">Email</label>
-                            </p>
-                            <input class="form-email" type="text" placeholder="" required>
-                            <p class="text">
-                                <label for="" class="rs-pws">Password</label>
-                            </p>
-                            <input class="form-pws" type="text" placeholder="" required>
-    
-                            <div class="psw-p">
-                                Your password must be eight characters or more and contain both an uppercase letter and a number
+        <div class="container">
+            <div class="content">
+                <div class="productDetails">
+                    <div class="slide-show">
+                        <div class="list-images">
+                            <div class="img-detail">
+                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/gucci/1.png" alt="" >
                             </div>
-                            <p class="text">
-                                <label for="" class="rs-name1">First name</label>
-                            </p>
-                            <input class="form-name1" type="text" required>
-                            <p class="text">
-                                <label for="" class="rs-name2">Last name</label>
-                            </p>
-                            <input class="form-name2" type="text" required>
-                            <div class="date-rs">
-                                <p class="text">
-                                    <label for="" class="rs-date">Date of birth (optional)</label>
-                                </p>
-                                <input class="date-rgs" type="text" placeholder="MM" required>
-                                <input class="date-rgs" type="text" placeholder="DD" required>
-                                <input class="date-rgs" type="text" placeholder="YYYY" required>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/2.png" alt="" >
                             </div>
-                            <div class="register-conset">
-                                <button class="check-terms" type="checked"></button>
-                                <div class="registerMarket-conset">Sign up for style news and offers</div>
-                                <a href="" class="register-link">
-                                    What will I receive?
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/3.png" alt="" >
+                            </div>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/4.png" alt="" >
+                            </div>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/5.png" alt="" >
+                            </div>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/6.png" alt="" >
+                            </div>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/gucci/6.png" alt="" >
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="btn-left btn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <div class="btn-right btn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="shopMore">
+                            <p class="shopMore__heading upperCase">view more</p>
+                            <div class="shopMore__link">
+                                <a href="#" class="shopMore1__link upperCase">the row</a>
+                                <a href="#" class="shopMore1__link">Bags</a>
+                                <a href="#" class="shopMore1__link">Tote Bags</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productDetail__selectInfo">
+                        <div class="productDetail__basicInfo">
+                            <div class="singlebadge upperCase">
+                                low stock
+                            </div>
+                            <div class="productInfomation">
+                                <a href="#">
+                                    <h1 class="productInfomation--brand">GUCCI</h1>
                                 </a>
+                                <p class="productInfomation__name">Ophidia embellished textured leather-trimmed printed coated-canvas shoulder bag</p>
                             </div>
-                            <div class="message-terms">
-                                By registering your account will be subject to the <a href="">Term and Conditions</a> & <a href="">Privacy Policy</a>
+                            <div class="priceProduct">$1,850</div>
+                        </div>
+                        <div class="productDetail">
+                            <div class="productDetail__colours">
+                                <p class="productDetail__colours--heading">Color: 
+                                    <span class="productDetail__colours--span">
+                                        Beige
+                                    </span>
+                                </p>
                             </div>
-                            <button type="submit" class="header__account-signin">Create Account</button>
-                        </form>
+                            <div class="sizelabel">
+                                <span class="onesize__label"> Size : 
+                                    <span class="onesize__label--one">
+                                        One size 
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="button__wrapper">
+                                <div class="productDetail__addbButton--addb">
+                                    <button class="button__addToBag" onclick="addToCart()">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="productDetail__addButton--wl">
+                                    <button class="button__addTowl">
+                                        <i class="fa-regular fa-star addButton__wlStar"></i>
+                                        Add to Wish List
+                                    </button>
+                                </div>
+                                <div class="productDetail__editor">
+                                    <div class="according__section">
+                                        <div class="editorAccording upperCase">
+                                            <i class="fa-solid fa-chevron-up according__down"></i>
+                                            editor's note 
+                                        </div>
+                                    </div>
+                                    <div class="according__section according__sectionContent">
+                                        <p>Gucci combines chic '90s minimalism with its iconic 'GG' monogram, which debuted in the 1930s. Made in Italy from printed coated-canvas and textured-leather, this 'Ophidia' bag has space inside for a few essentials, including your cardholder and a lip gloss, and comes with a sweet strawberry charm. Detach the gold-tone chain strap to wear it as a clutch.</p>
+                                    </div>
+                                    <div class="according__section according__sectionSize">
+                                        <div class="editorAccording upperCase">
+                                            <i class="fa-solid fa-chevron-down according__down"></i>
+                                            size & fit
+                                        </div>
+                                    </div>
+                                    <div class="according__section according__sectionDetail">
+                                        <div class="editorAccording upperCase">
+                                            <i class="fa-solid fa-chevron-down according__down"></i>
+                                            details & care
+                                        </div>
+                                    </div>
+                                    <div class="according__section according__SectionDelivery">
+                                        <div class="editorAccording upperCase">
+                                            <i class="fa-solid fa-chevron-down according__down"></i>
+                                            delivery & returns
+                                        </div>
+                                    </div>
+                                    <div class="partNumber">
+                                        Product Code 
+                                        <div class="part__number">
+                                            <span>0393</span>
+                                            <span>400</span>
+                                            <span>682</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-       </main>
-            
+        </div>
         <footer class="footer">
             <div class="footer__layout-area">
                 <div class="grid wide">
@@ -799,6 +875,7 @@
                                         <div class="account__untility-text">
                                             <p class="paragraph">Claim your exclusive discount code when you subscribe to our emails. Terms and conditions apply</p>
                                         </div>
+                                        <!-- <label for="" class="account__untility-email-label">Email Address</label> -->
                                         <div class="registrationform">
                                             <div class="registrationform__email">
                                                 <input class="registration__email-text" type="text" placeholder="your@address.com">
@@ -953,9 +1030,9 @@
             </div>
         </footer>
     </div>
-
-    <script src="./JS/hover.js"></script>
-    <script src="./JS/handleClick.js"></script>
-    <script src="../../JS/slideShowPrct.js"></script>
+    
+    <script src="../JS/handleClick.js"></script>
+    <script src="../JS/slide.show.js"></script>
+    <script src="../JS/addToCart.js"></script>
 </body>
 </html>

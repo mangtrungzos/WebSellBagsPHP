@@ -1,3 +1,4 @@
+<?php include("./config/constants.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,140 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="/WebSellBags/assest/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf">
-    <link rel="stylesheet" href="/WebSellBags/assest/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assest/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf">
+    <link rel="stylesheet" href="./assest/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/WebSellBags/assest/main.css">
-    <link rel="stylesheet" href="/WebSellBags/assest/base.css">
-    <!-- <link rel="stylesheet" href="/WebSellBags/assest/slide.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./assest/main.css">
+    <link rel="stylesheet" href="./assest/base.css">
     <meta data-react-helmet="true" property="og:title" content="Design Bags for Women | NET-A-PORTER">
     <title>Design Bags for Women</title>
 </head>
 <body>
     <div class="app">
-        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="">    
+        <img src="./image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style=" width: 1512px;" class="img-poster">
         <header class="header">
             <div class="grid wide">
-                <!-- <nav class="header__navbar">
-                    <ul class="header__navbar-list header__navbar-none ">
-                        <li class="header__navbar-item header__navbar-user">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-user"></i>
-                            </a>
-                            <div class="header__account">
-                                <header class="header__account-header">
-                                    <h2>MY ACCOUNT</h2>
-                                </header>
-                                <div class="header__account-inf">
-                                    <p class="text">
-                                        <label for="" class="header__account-label">Email Address</label>
-                                    </p>
-                                    <input type="text" class="header__account-email">
-                                    <p class="text">
-                                        <label for="" class="header__account-label">Password</label>
-                                    </p>
-                                    <input type="text" class="header__account-password">
-                                    <button class="header__account-signin">Sign in</button>
-                                    <div class="header__account-fgpwd">
-                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                    </div>
-                                    <div class="header__account-ftr">
-                                        <span class="account-ftr">Don't have an account?</span>
-                                        <a href="" class="account-ftr-link">Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item fl--header">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
-                            <span class="header__navbar-language">
-                                English
-                            </span>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar-list header__logo">
-                        <a href="/WebSellBags/index.html" class="header__navbar-logo">
-                            NET - A - PORTER
-                        </a> 
-                        
-                    </ul>
-                    <ul class="header__navbar-list header__margin-none">
-                        <li class="header__navbar-item">
-                            <div class="searchPanel__wrapper" id="searchIcon">
-                                <button class="searchPanel__icon"></button>
-                                <span class="header__navbar-search-text">Search</span>
-                            </div>
-                            <div class="searchOverlay" id="searchBar" onclick="searchBarOff()">
-                                <div class="searchOverlay-content">
-                                    <div class="searchOverlay__control--wrapper">
-                                        <div class="searchOverlay__control">
-                                            <div class="searchOverlay__icon--search"></div> 
-                                            <div class="searchOverlay__icon">
-                                                <form class="searchOverlay__form">
-                                                    <input type="text" id="searchOverlay__input" placeholder="Search NET-A-PORTER" class="searchOverlay__input">
-                                                </form>
-                                            </div>
-                                            <div class="searchOverlay__icon--close">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="overlayOn" onclick="overlayOff()"></div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-wlst">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-star"></i>
-                            </a>
-                            <div class="header__wlst">
-                                <header class="header__wlst-header">
-                                    <h2>WITH LIST</h2>
-                                </header>
-                                <div class="header__wlst-inf">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Email Address</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-email">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Password</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-password">
-                                    <button class="header__wlst-signin">Sign in</button>
-                                    <div class="header__wlst-fgpwd">
-                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                    </div>
-                                    <div class="header__wlst-ftr header__margin-none">
-                                        <span class="wlst-ftr">Don't have an account?</span>
-                                        <a href="" class="wlst-ftr-link">Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-shpping">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
-                            </a>
-                            <div class="header__shpping">
-                                <div class="shpping-icon">
-                                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="header__shpping-icon">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path d="M48 0v48H0V0z"/><path d="M33 12v-1c0-4.963-4.037-9-9-9s-9 4.037-9 9v1H2v33h44V12H33zm-16-1c0-3.86 3.14-7 7-7s7 3.14 7 7v1H17v-1zm27 32H4V14h40v29z" fill="#000" fill-rule="nonzero"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <p class="header__shpping-text">Your Shopping Bag is empty</p>
-                                <a href="" class="header__shpping-link">Shop What's New</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav> -->
-                
                 </div>
                 <div class="header__primary">
                     <div class="header__navbar-primary">
                         <ul class="header__navbar-list header__logo">
-                            <a href="../home.html" class="header__navbar-logo">
+                            <a href="<?php echo SITEURLHOME; ?>home.php" class="header__navbar-logo">
                                 NET - A - PORTER
                             </a> 
                             
@@ -168,7 +54,7 @@
                                             </div>
                                             <div class="header__account-ftr">
                                                 <span class="account-ftr">Don't have an account?</span>
-                                                <a href="./client/pages/register.html" class="account-ftr-link">Register now</a>
+                                                <a href="<?php echo SITEURLREGISTER?>register.php" class="account-ftr-link">Register now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -181,9 +67,10 @@
                                 </li>
                             </ul>
                         </div>
+                        
                         <div class="header__navbar-category-scd1 header__navbar-category">
                             <div class="header-category-link-scd">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="./index.html" class="header-category-link">
                                     New In
                                 </a>
                             </div>
@@ -204,7 +91,7 @@
                                             <h4 class="categorymenu2__heading">editorial</h4>
                                             <div class="categorymenu2__parh">
                                                 <a href="" class="categorymenu2-img">
-                                                    <img src="/WebSellBags/image/New in/new-in.png" alt="" class="categorymenu2__img">
+                                                    <img src="./image/New in/new-in.png" alt="" class="categorymenu2__img">
                                                 </a>
                                                 <a href="" class="categorymenu2__paragraph">Your daily dose of style inspiration, Incredible Women and more</a>   
                                             </div>
@@ -214,7 +101,7 @@
                                             <h4 class="categorymenu2__heading">latest stories</h4>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="/WebSellBags/image/New in/fashion1.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="./image/New in/fashion1.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -226,7 +113,7 @@
                                             </div>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="/WebSellBags/image/New in/lifestyle.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="./image/New in/lifestyle.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -238,7 +125,7 @@
                                             </div>
                                             <div class="categorymenu2-lastStories">
                                                 <div class="categorymenu2-fashion">
-                                                    <img class="categorymenu2__fashion-img" src="/WebSellBags/image/New in/fashion2.png" alt="">
+                                                    <img class="categorymenu2__fashion-img" src="./image/New in/fashion2.png" alt="">
                                                 </div>
                                                 <div class="categorymenu2__info">
                                                     <a href="" class="categorymenu2__info-link">
@@ -256,7 +143,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="./index.html" class="header-category-link">
                                     Shop By
                                 </a>
                             </div>
@@ -346,7 +233,7 @@
                                     <div class="header__categorymenu3">
                                         <div class="categorymenu3-img">
                                             <a href="" class="categorymenu3__img-link">
-                                                <img src="/WebSellBags/image/Shop by/url2img_652f2ec751bbf.jpeg" alt="" class="categorymenu3__img">
+                                                <img src="./image/Shop by/url2img_652f2ec751bbf.jpeg" alt="" class="categorymenu3__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Time to shine</a>
@@ -358,7 +245,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd3">
                             <div class="header-category-link-scd2">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="./index.html" class="header-category-link">
                                     Designers
                                 </a>
                             </div>
@@ -453,7 +340,7 @@
                                     <div class="header__categorymenu">
                                         <div class="categorymenu4-img">
                                             <a href="" class="categorymenu4__img-link">
-                                                <img src="/WebSellBags/image/Designer/url2img_652f2f9fc510a.jpeg" alt="" class="categorymenu__img">
+                                                <img src="./image/Designer/url2img_652f2f9fc510a.jpeg" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Introducing vercase Icons</a>
@@ -465,7 +352,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="/WebSellBags/index.html" class="header-category-link">
+                                <a href="#" class="header-category-link">
                                     Bags
                                 </a>
                             </div>
@@ -558,7 +445,7 @@
                                     <div class="header__categorymenu3">
                                         <div class="categorymenu3-img">
                                             <a href="" class="categorymenu3__img-link">
-                                                <img src="/WebSellBags/image/Bags/Screenshot 2023-11-22 071945.png" alt="" class="categorymenu3__img">
+                                                <img src="./image/Bags/Screenshot 2023-11-22 071945.png" alt="" class="categorymenu3__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Hunting Season's enduring bags</a>
@@ -570,13 +457,13 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="./index.html" class="header-category-link">
                                     People & Planet
                                 </a>
                             </div>
                             <div class="categorymenu5">
                                 <div class="header-categorymenu">
-                                    <div class="header__categorymenu header__categorymenu-wdth">
+                                    <div class="header__categorymenu header__categorymenu-wdth" style="width: 20%;">
                                         <ul class="categorymenu-list">
                                             <h4 class="categorymenu5__heading">discover</h4>
                                             <a href="" class="categorymenu__link">
@@ -620,13 +507,13 @@
                                                 <li class="categorymenu__item-general">REFLAUNT: Resale at NET-A-PORTER</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general line-height">8 Incredible Women driving forward sustainability in their fields</li>
+                                                <li class="categorymenu__item-general">8 Incredible Women driving forward sustainability in their fields</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general line-height">The V&A's DIVA exhibition, supported by NET-A-PORTER</li>
+                                                <li class="categorymenu__item-general">The V&A's DIVA exhibition, supported by NET-A-PORTER</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu__item-general line-height">#THENETWORK: discover our global community</li>
+                                                <li class="categorymenu__item-general">#THENETWORK: discover our global community</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
                                                 <li class="categorymenu__item-general">Shop NET SUSTAIN</li>
@@ -636,7 +523,7 @@
                                     <div class="header__categorymenu header__categorymenu-wdth">
                                         <div class="categorymenu-img">
                                             <a href="" class="categorymenu__img-link">
-                                                <img src="/WebSellBags/image/PP/url2img_652f32b413a2f.jpeg" alt="" class="categorymenu__img">
+                                                <img src="./image/PP/url2img_652f32b413a2f.jpeg" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Resell with a NET-A-PORTER</a>
@@ -648,7 +535,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="./index.html" class="header-category-link">
                                     Home & Gifts
                                 </a>
                             </div>
@@ -753,7 +640,7 @@
                                     <div class="header__categorymenu header__categorymenu-wdth">
                                         <div class="categorymenu-img">
                                             <a href="" class="categorymenu__img-link">
-                                                <img src="/WebSellBags/image/h&g/Screenshot 2023-10-23 183405.png" alt="" class="categorymenu__img">
+                                                <img src="./image/h&g/Screenshot 2023-10-23 183405.png" alt="" class="categorymenu__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">New In: Dolce & Gabbana Casa</a>
@@ -765,11 +652,11 @@
                         </div>
                         <div class="header__navbar-category-frst">
                             <div class="header-category-link-frst">
-                                <a href="" class="header-category-link header-category-link-frst active">
+                                <a href="./index.html" class="header-category-link header-category-link-frst active">
                                     <span class="header-category-sale ">
                                         EXTRA 10% off</span>
                                     </span>
-                                </a>    
+                                </a>        
                             </div>
                             
                         </div>
@@ -828,7 +715,7 @@
                                     </div>
                                 </li>
                                 <li class="header__navbar-item header__navbar-shpping">
-                                    <a href="./pages/cart/cart.html" class="header__navbar-icon-link">
+                                    <a href="<?php echo SITEURLCART; ?>cart.php" class="header__navbar-icon-link">
                                         <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
                                     </a>
                                     <div class="header__shpping">
@@ -845,38 +732,665 @@
                                 </li>
                             </ul>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </header>
-        <div class="containers">
-            <div class="content">
-                <div class="checkout-header">
-                    <h2 class="checkout-title">
-                        Shopping Bag
-                    </h2>
+        <div class="container">
+            <div class="header__container-content">
+                <div class="header__container-title">
+                    <h2 class="header__title">Bags</h2>
                 </div>
-                <div class="checkout-itemAndTotal">
-                    <div class="cart-product">
-                        <ul id="cart"></ul>
+                <div class="header__container-copy">
+                    <div class="header__container-copy1">
+                        <p>Explore our collection of women's designer bags. With designs including 
+                            <a class="" href="#">tote bags</a>
+                            , designer 
+                            <a class="" href="#">shoulder bags</a>
+                            , leather 
+                            <a class="" href="#">clutches</a> 
+                            and 
+                            <a class="" href="#">backpacks</a>
+                            , the choices are endless. Whether you need a designer clutch for a special event or a designer purse for your everyday look, we're sure you'll find a designer handbag to suit you in our range.</p>
                     </div>
-                    <div class="total-product">
-                        <span class="checkout-oderSummary">Order Summary</span>
-                        <ul id="total-price"></ul>
-                        <div class="Notification--info">
-                            <img src="/WebSellBags/image/icon/exclamation.png" alt="" class="excl--icon">
-                            <span class="Notification__message">Local taxes may apply at checkout</span>
+                </div>
+                <div class="header__container-img">
+                    <!-- <img src="./image/poster/Screenshot 2023-12-11 193152.png" alt=""> -->
+                </div>
+            </div>
+            <div class="grid wide ">
+                <div class="product-heading">
+                    <div class="productlisting__refine">
+                        <div class="productlisting__total">
+                            <span class="productlisting__totalProdcuts">521 Results</span>
                         </div>
-                        <div class="button--checkout">
-                            <img src="/WebSellBags/image/icon/padlock.png" alt="" class="unlock--checkout">
-                            <a href="#" class="button--primary">
-                                <span class="button-checkout">Continue to checkout</span>
-                            </a>
+                        <div class="productlisting__orderby">
+                            <div class="produclisting__orderbyed" onclick="toggleRecomended()">
+                                <span class="productlisting__orderbyProducts">
+                                    Recommended
+                                    <i class="productlisting__icon fa-solid fa-chevron-down"></i>
+                                </span>
+                            </div>
+                            <div class="combine--opened combine--openedShow">
+                                <div class="combine__custom">
+                                    <div class="combine__lable">
+                                        <span class="productlisting__orderbyProducts">Sort by</span>
+                                        <i class="productlisting__icons fa-solid fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                                <ul class="combineSelect__field">
+                                    <li class="border-clr border-selct">Recommended</li>
+                                    <li>New in</li>
+                                    <li>Price Hight to Low</li>
+                                    <li>Price Low to High</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="paymentcards--wallet">
-                            <div class="paymentcards--icon">
-                                <img src="/WebSellBags/image/icon/paymentcard/paypal.png" alt="" width="40px" height="40px">
-                                <img class="card--icon" src="/WebSellBags/image/icon/paymentcard/visa.png" alt="" width="40px" height="40px">
+    
+                    </div>
+                </div>
+                <div class="row main-body">
+                    <div class="col l-3">
+                        <div class="category">
+                            <div class="category-item">
+                                <div class="category-title" onclick="toggleSubMenu()">
+                                    category
+                                    <i class="sub-btn category__icon fa-solid fa-chevron-down dropdown"></i>
+                                    <!-- <i class="category__icon-up fa-solid fa-chevron-up"></i> -->
+                                </div>
+                                <div class="category-subtitle">Bags</div>
+                                <div class="category-menu sub-menu">
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Backpacks</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Belt Bags</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Bucket Bags</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Clutch Bags</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Cross-Body Bags</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Luggage and Travel</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Mini Bags</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox"></span>
+                                        <span class="filter__filterlinelabel">Shoudler Bags</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-title" onclick="toggleSubMenuDesign()">
+                                    designer
+                                    <i class="category__icon category__icons fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="category-subtitle">ALL</div>
+                                <div class="category-menu category-menu__design">
+                                    <div class="category__menu--search">
+                                        <input  type="text" class="search--design" placeholder="Search design">
+                                    </div>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">ACNE STUDIOS</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">ALEXANDER MCQUEEN</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">BALENCIAGA</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">GUCCI</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">LOEWE</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">BOTTEGA VENETA</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">BURBERRY</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">PUCCI</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-title" onclick="toggleSubMenuColor()">
+                                    color
+                                    <i class="category__icon category__icon-color fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="category-subtitle">ALL</div>
+                                <div class="category-menu category-menu__color">
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Blue</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Black</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Brown</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Cream</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Ecru</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Green</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Gold</span>
+                                    </a>
+                                    <a href="#" class="filter__filterline">
+                                        <span class="filter__filtercheckbox--col"></span>
+                                        <span class="filter__filterlinelabel">Rose gold</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col l-9 category--prt">
+                        <div class="row mainProduct-body">
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT?>product.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/bag1.png" alt="" class="product-img showmodels">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/url2img_652f705518964.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">THE ROW</span>
+                                            <span class="product__content-text">N/S Park large suede tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,105</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product1.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/AlexQueen.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/url2img_652f6ff9d3854.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">ALEXANDER MCQUEEN</span>
+                                            <span class="product__content-text">Suede-trimmed leather exaggerated-sole sneakers</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,450</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product7.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/ProductDetail/gucci/1.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/ProductDetail/gucci/2.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">GUCCI</span>
+                                            <span class="product__content-text">Ophidia embellished textured leather-trimmed printed coated-canvas shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,850</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product2.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/bag4.png" alt="" class="product-img showmodels">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/ProductDetail/row/2.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">THE ROW</span>
+                                            <span class="product__content-text">Chain-embellished leather-trimmed canvas shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,150</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product3.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/1.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/1.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">SAVETTE</span>
+                                            <span class="product__content-text">Symmetry Pochette suede tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,190</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product4.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/url2img_652f769f09cf8.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/url2img_652f768b7ce20.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">FERRAGAMO</span>
+                                            <span class="product__content-text">HUg embellished large leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,900</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product5.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/url2img_652f76f4d69d2.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/url2img_652f76e574d79.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">TOTEME</span>
+                                            <span class="product__content-text">T-Lock leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,390</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="<?php echo STIEURLPRT;?>product6.php" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/bottega.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-bottega.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">BOTTEGA VENETA</span>
+                                            <span class="product__content-text">Sardine small intrecciato leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$4,200</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/laurent.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-laurent.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">SAINT LAURENT</span>
+                                            <span class="product__content-text">Quilted leather drawstring shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,600</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/loewe.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-loewe.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">LOEWE</span>
+                                            <span class="product__content-text">Goya Puffer mini shearling shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,600</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/bottega1.jpeg" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-bottega1.jpeg" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">BOTTEGA VENETA</span>
+                                            <span class="product__content-text">Andiamo embellished intrecciato leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$4,500</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/serapian.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-serapian.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <span class="product__heading">SERAPIAN</span>
+                                            <span class="product__content-text">Travel woven leather weekend bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$3,350</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productItem-center ">
+                                <a href="" class="productItem__link">
+                                    <div class="col l-4 productItem">
+                                        <a href="" class="product-item mainProduct__item">
+                                            <div class="productImage-item">
+                                                <div class="mainProduct__img">
+                                                    <img src="./image/img-center/url2img_652f3410bdbfa.jpeg" alt="" class="productImg">
+                                                </div>
+                                                <div class="mainProduct__content">
+                                                    <h2 class="productContent__title">Resell with NET-A-PORTER</h2>
+                                                    <div class="productContent__text">Take your pieces from pre-loved to re-loved with our effortless service</div>
+                                                    <span class="productContent__link">Discover more</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/jacquemus.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-jacquemus.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">JACQUEMUS</span>
+                                            <span class="product__content-text">Le Chiquito Moyen velour shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$820</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/gucci.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-gucci.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">GUCCI</span>
+                                            <span class="product__content-text">Ophidia embellished textured leather-trimmed printed coated-canvas shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,850</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/burberry.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-burberry.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">BURBERRY</span>
+                                            <span class="product__content-text">Small embellished suede shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,950</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/khaite3.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-khaite3.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">KHAITE</span>
+                                            <span class="product__content-text">Olivia medium leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,700</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/balenciaga1.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-balenciaga1.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">BALENCIAGA</span>
+                                            <span class="product__content-text">Hourglass leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,600</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/chloé1.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-chloé1.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">CHOLÉ</span>
+                                            <span class="product__content-text">Woody medium embroidered shell tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,250</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/ferragamo1.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-ferragamo1.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">FERRAGAMO</span>
+                                            <span class="product__content-text">Woody medium embroidered shell tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,900</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/gianvito rossi2.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-gianvito rossi2.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">GIANVITO ROSSI</span>
+                                            <span class="product__content-text">Valì mini leather tote</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$2,895</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="product-item">
+                                    <div class="product__image-item">
+                                        <div class="double-image">
+                                            <div class="doubleImage-frst">
+                                                <img src="./image/JW anderson2.png" alt="" class="product-img">
+                                            </div>
+                                            <div class="doubleImage-scd">
+                                                <img src="./image/models/m-JW anderson2.png" alt="" class="hover-image db-image">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__content">
+                                            <span class="product__heading">JW ADNERSON</span>
+                                            <span class="product__content-text">Chain-embellished leather shoulder bag</span>
+                                        </div>
+                                        <div class="product__ftr-cost">
+                                            <span class="product__cost">$1,250</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -884,6 +1398,34 @@
             </div>
         </div>
         <footer class="footer">
+            <a href="#" class="scrolltotop">
+                <div class="scrolltotop__icon">
+                    <i class="scrolltotop__iconup fa-solid fa-arrow-up"></i>
+                </div>
+            </a>
+            <div class="ftr-pagination">
+                <div class="pagination__wrapper">
+                    <div class="pagination__left ">
+                        <a href="" class="pagination__link">
+                            <span class="pagination-text pagination__left--disabled">
+                                <i class="pagination-icon fa-solid fa-angle-left"></i>
+                                Previous
+                            </span>
+                        </a>
+                    </div>
+                    <div class="pagination__currentpage">
+                        <span class="pagination-currentpage">Page 1 of 8</span>
+                    </div>
+                    <div class="pagination__right">
+                        <a href="" class="pagination__link">
+                            <span class="pagination-text pagination__right">
+                                Next
+                                <i class="pagination-icon fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="footer__layout-area">
                 <div class="grid wide">
                     <div class="row footerlayout">
@@ -895,6 +1437,7 @@
                                         <div class="account__untility-text">
                                             <p class="paragraph">Claim your exclusive discount code when you subscribe to our emails. Terms and conditions apply</p>
                                         </div>
+                                        <!-- <label for="" class="account__untility-email-label">Email Address</label> -->
                                         <div class="registrationform">
                                             <div class="registrationform__email">
                                                 <input class="registration__email-text" type="text" placeholder="your@address.com">
@@ -1049,9 +1592,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="./JS/hover.js"></script>
+    <script src="./JS/handleClick.js"></script>
     
-    <script src="/WebSellBags/JS/slide.show.js"></script>
-    <script src="/WebSellBags/JS/handleClick.js"></script>
-    <script src="/WebSellBags/JS/Product.js"></script>
 </body>
 </html>

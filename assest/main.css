@@ -16,6 +16,10 @@
     border-left: 3px solid #111;
 }
 
+.img-poster{
+    width: 1512px;
+}
+
 .header__navbar{
     display: flex;
     height: var(--navbar-height);
@@ -660,7 +664,9 @@
 .header__primary{
     margin-top: -5px;
     position: relative;
+    display: block;
 }
+
 
 .header__navbar-primary{
     display: flex;
@@ -854,7 +860,7 @@
     width: 435px;
     height: 470px;
     top: 60px;
-    right: 150px;
+    right: 30px;
     box-shadow: 0 2px 4px #e5e5e5;
     display: none;
     z-index: 1;

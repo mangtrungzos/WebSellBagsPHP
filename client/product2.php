@@ -1,3 +1,4 @@
+<?php include("../config/constants.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,133 +17,15 @@
 </head>
 <body>
     <div class="app">
-        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="">
-
+        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
         <header class="header">
             <div class="grid wide">
-                <!-- <nav class="header__navbar">
-                    <ul class="header__navbar-list header__navbar-none ">
-                        <li class="header__navbar-item header__navbar-user">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-user"></i>
-                            </a>
-                            <div class="header__account">
-                                <header class="header__account-header">
-                                    <h2>MY ACCOUNT</h2>
-                                </header>
-                                <div class="header__account-inf">
-                                    <p class="text">
-                                        <label for="" class="header__account-label">Email Address</label>
-                                    </p>
-                                    <input type="text" class="header__account-email">
-                                    <p class="text">
-                                        <label for="" class="header__account-label">Password</label>
-                                    </p>
-                                    <input type="text" class="header__account-password">
-                                    <button class="header__account-signin">Sign in</button>
-                                    <div class="header__account-fgpwd">
-                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                    </div>
-                                    <div class="header__account-ftr">
-                                        <span class="account-ftr">Don't have an account?</span>
-                                        <a href="" class="account-ftr-link">Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item fl--header">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNGMEYwRjAiLz48cGF0aCBkPSJNMTEuNTIxIDEySDIzYzAtLjk5My0uMTMzLTEuOTU1LS4zOC0yLjg3SDExLjUyMlYxMnpNMTEuNTIxIDYuMjZoOS44NjRhMTEuMDU3IDExLjA1NyAwIDAwLTIuNTM4LTIuODY5aC03LjMyNnYyLjg3ek0xMiAyM2MyLjU4OCAwIDQuOTY4LS44OTUgNi44NDctMi4zOTFINS4xNTJBMTAuOTUzIDEwLjk1MyAwIDAwMTIgMjN6TTIuNjE0IDE3Ljc0aDE4Ljc3MWMuNTQxLS44ODMuOTYtMS44NDcgMS4yMzYtMi44N0gxLjM3OWExMC45MzQgMTAuOTM0IDAgMDAxLjIzNSAyLjg3eiIgZmlsbD0iI0Q4MDAyNyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNy4wOTggMi43MThINi4wOTVBMTAuOTQ4IDEwLjk0OCAwIDAxMTIgMXYxMUgxYzAtLjQ2NC4wMy0uOTIyLjA4NS0xLjM3MmwuNTU5LS40MDUuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDJsLS4zMTMtLjk2MmExMC45IDEwLjkgMCAwMS4zNi0uODU0bC41MjkuMzg1LS4yODQtLjg3M2MuMDg1LS4xNTkuMTc0LS4zMTUuMjY3LS40N2wuNTkzLS40M2gtLjMyMWExMS4wNiAxMS4wNiAwIDAxMi4xMzMtMi4zNzlsLS4zMDcuOTQ3LjkzMi0uNjc3LjkzMy42NzctLjM1Ny0xLjA5Ni45MzMtLjY3N3ptLTEuNTA5IDcuNTA1bC45MzMuNjc3LS4zNTctMS4wOTYuOTMzLS42NzdINS45NDVMNS41OSA4LjAzbC0uMzU2IDEuMDk3SDQuMDgxbC45MzIuNjc3LS4zNTYgMS4wOTYuOTMyLS42Nzd6TTYuMTY1IDYuNmwuMzU3IDEuMDk2LS45MzMtLjY3OC0uOTMyLjY3OC4zNTYtMS4wOTYtLjkzMi0uNjc4aDEuMTUybC4zNTYtMS4wOTYuMzU2IDEuMDk2aDEuMTUzbC0uOTMzLjY3OHptMy4zNyAzLjYyM2wuOTMyLjY3Ny0uMzU2LTEuMDk2LjkzMi0uNjc3SDkuODkyTDkuNTM1IDguMDNsLS4zNTYgMS4wOTdIOC4wMjZsLjkzMy42NzctLjM1NyAxLjA5Ni45MzMtLjY3N3pNMTAuMTEgNi42bC4zNTYgMS4wOTYtLjkzMi0uNjc4LS45MzMuNjc4TDguOTYgNi42bC0uOTMzLS42NzhIOS4xOGwuMzU2LTEuMDk2LjM1NiAxLjA5NmgxLjE1MmwtLjkzMi42Nzh6bS4zNTYtMi4xMDlsLS4zNTYtMS4wOTYuOTMyLS42NzdIOS44OTJsLS4zNTYtMS4wOTYtLjM1NiAxLjA5Nkg4LjAyNmwuOTMzLjY3Ny0uMzU3IDEuMDk2LjkzMy0uNjc3LjkzMi42Nzd6IiBmaWxsPSIjMDA1MkI0Ii8+PC9zdmc+" alt="">
-                            <span class="header__navbar-language">
-                                English
-                            </span>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar-list header__logo">
-                        <a href="../index.html" class="header__navbar-logo">
-                            NET - A - PORTER
-                        </a> 
-                        
-                    </ul>
-                    <ul class="header__navbar-list header__margin-none">
-                        <li class="header__navbar-item">
-                            <div class="searchPanel__wrapper" id="searchIcon">
-                                <button class="searchPanel__icon"></button>
-                                <span class="header__navbar-search-text">Search</span>
-                            </div>
-                            <div class="searchOverlay" id="searchBar" onclick="searchBarOff()">
-                                <div class="searchOverlay-content">
-                                    <div class="searchOverlay__control--wrapper">
-                                        <div class="searchOverlay__control">
-                                            <div class="searchOverlay__icon--search"></div> 
-                                            <div class="searchOverlay__icon">
-                                                <form class="searchOverlay__form">
-                                                    <input type="text" id="searchOverlay__input" placeholder="Search NET-A-PORTER" class="searchOverlay__input">
-                                                </form>
-                                            </div>
-                                            <div class="searchOverlay__icon--close">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="overlayOn" onclick="overlayOff()"></div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-wlst">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon fa-regular fa-star"></i>
-                            </a>
-                            <div class="header__wlst">
-                                <header class="header__wlst-header">
-                                    <h2>WITH LIST</h2>
-                                </header>
-                                <div class="header__wlst-inf">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Email Address</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-email">
-                                    <p class="text">
-                                        <label for="" class="header__wlst-label">Password</label>
-                                    </p>
-                                    <input type="text" class="header__wlst-password">
-                                    <button class="header__wlst-signin">Sign in</button>
-                                    <div class="header__wlst-fgpwd">
-                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
-                                    </div>
-                                    <div class="header__wlst-ftr header__margin-none">
-                                        <span class="wlst-ftr">Don't have an account?</span>
-                                        <a href="" class="wlst-ftr-link">Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-item header__navbar-shpping">
-                            <a href="" class="header__navbar-icon-link">
-                                <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
-                            </a>
-                            <div class="header__shpping">
-                                <div class="shpping-icon">
-                                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="header__shpping-icon">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path d="M48 0v48H0V0z"/><path d="M33 12v-1c0-4.963-4.037-9-9-9s-9 4.037-9 9v1H2v33h44V12H33zm-16-1c0-3.86 3.14-7 7-7s7 3.14 7 7v1H17v-1zm27 32H4V14h40v29z" fill="#000" fill-rule="nonzero"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <p class="header__shpping-text">Your Shopping Bag is empty</p>
-                                <a href="" class="header__shpping-link">Shop What's New</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav> -->
-                
-                </div>
                 <div class="header__primary">
                     <div class="header__navbar-primary">
                         <ul class="header__navbar-list header__logo">
-                            <a href="./pages/home.html" class="header__navbar-logo">
+                            <a href="./home.html" class="header__navbar-logo">
                                 NET - A - PORTER
-                            </a> 
-                            
+                            </a>
                         </ul>
                         <div class="header__navbar-listUser ">
                             <ul class="header__navbar-list header__navbar-none ">
@@ -184,7 +67,7 @@
                         </div>
                         <div class="header__navbar-category-scd1 header__navbar-category">
                             <div class="header-category-link-scd">
-                                <a href="" class="header-category-link">
+                                <a href="../index.html" class="header-category-link">
                                     New In
                                 </a>
                             </div>
@@ -257,7 +140,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="" class="header-category-link">
+                                <a href="../index.html" class="header-category-link">
                                     Shop By
                                 </a>
                             </div>
@@ -359,7 +242,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd3">
                             <div class="header-category-link-scd2">
-                                <a href="" class="header-category-link">
+                                <a href="../index.html" class="header-category-link">
                                     Designers
                                 </a>
                             </div>
@@ -464,9 +347,114 @@
                             </div>
                             <div class="header__navbar-overflow"></div>
                         </div>
+                        <div class="header__navbar-category header__navbar-category-scd2">
+                            <div class="header-category-link-scd1">
+                                <a href="<?php echo SITEURLAD?>index.php" class="header-category-link">
+                                    Bags
+                                </a>
+                            </div>
+                            <div class="categorymenu3">
+                                <div class="header-categorymenu">
+                                    <div class="header__categorymenu3">
+                                        <ul class="categorymenu-list">
+                                            <h4 class="categorymenu3__heading">All Bags</h4>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Clutch Bags</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Cross-Body Bags</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Evening Bags</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Luggage and Travel</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Mini Bags</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Shoulder Bags</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Tote Bags</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="header__categorymenu3">
+                                        <ul class="categorymenu-list header__categorymenu3-bl">
+                                            <h4 class="categorymenu3__heading">DESINGERS</h4>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Balenciaga</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Bottega Veneta</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Cholé</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Gucci</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Loewe</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">SAINT LAURENT</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">The Row</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Valentino Garavani</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">All Designers</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="header__categorymenu3">
+                                        <ul class="categorymenu-list header__categorymenu3-bl">
+                                            <h4 class="categorymenu3__heading">SHOP BY</h4>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Icons</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Exclusives</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Vacation</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Essentials</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Trending Now</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Party</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu3-item">Resell your pre-loved bags</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="header__categorymenu3">
+                                        <div class="categorymenu3-img">
+                                            <a href="" class="categorymenu3__img-link">
+                                                <img src="../image/Bags/Screenshot 2023-11-22 071945.png" alt="" class="categorymenu3__img">
+                                            </a>
+                                        </div>
+                                        <a href="" class="categorymenu__text">Hunting Season's enduring bags</a>
+                                        <a href="" class="categorymenu__text2">Shop the collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__navbar-overflow"></div>
+                        </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="" class="header-category-link">
+                                <a href="../index.html" class="header-category-link">
                                     People & Planet
                                 </a>
                             </div>
@@ -544,7 +532,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="" class="header-category-link">
+                                <a href="../index.html" class="header-category-link">
                                     Home & Gifts
                                 </a>
                             </div>
@@ -661,7 +649,7 @@
                         </div>
                         <div class="header__navbar-category-frst">
                             <div class="header-category-link-frst">
-                                <a href="" class="header-category-link header-category-link-frst active">
+                                <a href="../index.html" class="header-category-link header-category-link-frst active">
                                     <span class="header-category-sale ">
                                         EXTRA 10% off</span>
                                     </span>
@@ -724,7 +712,7 @@
                                     </div>
                                 </li>
                                 <li class="header__navbar-item header__navbar-shpping">
-                                    <a href="./pages/cart/cart.html" class="header__navbar-icon-link">
+                                    <a href="<?php echo SITEURLCART?>cart.php" class="header__navbar-icon-link">
                                         <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
                                     </a>
                                     <div class="header__shpping">
@@ -736,7 +724,7 @@
                                             </svg>
                                         </div>
                                         <p class="header__shpping-text">Your Shopping Bag is empty</p>
-                                        <a href="./pages/cart/cart.html" class="header__shpping-link">Shop What's New</a>
+                                        <a href="" class="header__shpping-link">Shop What's New</a>
                                     </div>
                                 </li>
                             </ul>
@@ -751,22 +739,22 @@
                     <div class="slide-show">
                         <div class="list-images">
                             <div class="img-detail">
-                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/toteme/1.png" alt="" >
+                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/row/1.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/toteme/2.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/row/2.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/toteme/3.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/row/3.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/toteme/4.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/row/4.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/toteme/5.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/row/5.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/toteme/5.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/row/5.png" alt="" >
                             </div>
                         </div>
                         <div class="btns">
@@ -793,24 +781,24 @@
                             </div>
                             <div class="productInfomation">
                                 <a href="#">
-                                    <h1 class="productInfomation--brand">TOTEME</h1>
+                                    <h1 class="productInfomation--brand">THE ROW</h1>
                                 </a>
-                                <p class="productInfomation__name">Suede tote</p>
+                                <p class="productInfomation__name">N/S Park large suede tote</p>
                             </div>
-                            <div class="priceProduct">$1,190</div>
+                            <div class="priceProduct">$2,390</div>
                         </div>
                         <div class="productDetail">
                             <div class="productDetail__colours">
                                 <p class="productDetail__colours--heading">Color: 
                                     <span class="productDetail__colours--span">
-                                        Brown
+                                        Taupe
                                     </span>
                                 </p>
                             </div>
                             <div class="sizelabel">
                                 <span class="onesize__label"> Size : 
                                     <span class="onesize__label--one">
-                                        One size
+                                        One Size (One left)
                                     </span>
                                 </span>
                             </div>
@@ -834,7 +822,7 @@
                                         </div>
                                     </div>
                                     <div class="according__section according__sectionContent">
-                                        <p>TOTEME's tote has a spacious, unstructured design that fits almost every daily essential from your water bottle to spare flats, and looks so chic in the process. Made from smooth suede, it has an open top and slim strap with an adjustable buckle to create your ideal drop.</p>
+                                        <p>The Row's 'N/S Park' tote is spacious, understated and versatile, making it the perfect everyday bag. It's crafted from textured-leather in a slouchy shape that's subtly stamped with the label's moniker in tonal letters at the front. The suede-lined interior fits the essentials, plus a tablet or book, while the top handle fits comfortably over the shoulder.</p>
                                     </div>
                                     <div class="according__section according__sectionSize">
                                         <div class="editorAccording upperCase">
@@ -1038,7 +1026,8 @@
     </div>
     
     <script src="../JS/handleClick.js"></script>
-    <script src="../JS/addToCart.js"></script>
     <script src="../JS/slide.show.js"></script>
+    <script src="../JS/addToCart.js"></script>
+
 </body>
 </html>

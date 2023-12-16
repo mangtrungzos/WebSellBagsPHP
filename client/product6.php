@@ -1,3 +1,4 @@
+<?php include("../config/constants.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +17,14 @@
 </head>
 <body>
     <div class="app">
-        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="">
+        <img src="/WebSellBags/image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
 
         <header class="header">
             <div class="grid wide">
-               
-                </div>
                 <div class="header__primary">
                     <div class="header__navbar-primary">
                         <ul class="header__navbar-list header__logo">
-                            <a href="./home.html" class="header__navbar-logo">
+                            <a href="./pages/home.html" class="header__navbar-logo">
                                 NET - A - PORTER
                             </a> 
                             
@@ -70,7 +69,7 @@
                         </div>
                         <div class="header__navbar-category-scd1 header__navbar-category">
                             <div class="header-category-link-scd">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     New In
                                 </a>
                             </div>
@@ -143,7 +142,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Shop By
                                 </a>
                             </div>
@@ -245,7 +244,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd3">
                             <div class="header-category-link-scd2">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Designers
                                 </a>
                             </div>
@@ -352,7 +351,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">
-                                <a href="../../index.html" class="header-category-link">
+                                <a href="<?php echo SITEURLAD?>index.php" class="header-category-link">
                                     Bags
                                 </a>
                             </div>
@@ -457,7 +456,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     People & Planet
                                 </a>
                             </div>
@@ -535,7 +534,7 @@
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd4">
                             <div class="header-category-link-scd3">
-                                <a href="../index.html" class="header-category-link">
+                                <a href="" class="header-category-link">
                                     Home & Gifts
                                 </a>
                             </div>
@@ -715,7 +714,7 @@
                                     </div>
                                 </li>
                                 <li class="header__navbar-item header__navbar-shpping">
-                                    <a href="./pages/cart/cart.html" class="header__navbar-icon-link">
+                                    <a href="<?php echo SITEURLCART?>cart.php" class="header__navbar-icon-link">
                                         <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
                                     </a>
                                     <div class="header__shpping">
@@ -742,22 +741,25 @@
                     <div class="slide-show">
                         <div class="list-images">
                             <div class="img-detail">
-                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/1.png" alt="Product Image" >
+                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/bottega/1.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/2.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/2.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/3.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/3.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/4.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/4.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/5.png" alt="" >
                             </div>
                             <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/6.png" alt="" >
+                            </div>
+                            <div class="img-detail">
+                                <img class="imgdetails" src="../image/ProductDetail/bottega/6.png" alt="" >
                             </div>
                         </div>
                         <div class="btns">
@@ -784,24 +786,24 @@
                             </div>
                             <div class="productInfomation">
                                 <a href="#">
-                                    <h1 class="productInfomation--brand">THE ROW</h1>
+                                    <h1 class="productInfomation--brand">BOTTEGA VENETA</h1>
                                 </a>
-                                <p class="productInfomation__name">N/S Park large suede tote</p>
+                                <p class="productInfomation__name">Sardine small intrecciato leather tote</p>
                             </div>
-                            <div class="priceProduct">$2,450</div>
+                            <div class="priceProduct">$4,200</div>
                         </div>
                         <div class="productDetail">
                             <div class="productDetail__colours">
                                 <p class="productDetail__colours--heading">Color: 
                                     <span class="productDetail__colours--span">
-                                        Dark brown
+                                        Gray
                                     </span>
                                 </p>
                             </div>
                             <div class="sizelabel">
                                 <span class="onesize__label"> Size : 
                                     <span class="onesize__label--one">
-                                        One size (Low stock)
+                                        One size 
                                     </span>
                                 </span>
                             </div>
@@ -825,7 +827,7 @@
                                         </div>
                                     </div>
                                     <div class="according__section according__sectionContent">
-                                        <p>The Row's 'N/S Park' tote captures the clean lines of the nonchalant label, balancing the perfect amount of structure and slouch. Crafted from soft suede, the roomy interior makes it perfect for commutes and going to your favorite spots. The bag is finished with the label's moniker, in a subtle scale of course.</p>
+                                        <p>Originally part of Matthieu Blazy's debut collection, Bottega Veneta's 'Sardine' tote builds on the brand's house codes. Made in Italy from supple leather, its intrecciato weave has been tastefully downsized and enhanced with a sculptural gold-tone handle. Match it to your jewelry.</p>
                                     </div>
                                     <div class="according__section according__sectionSize">
                                         <div class="editorAccording upperCase">
