@@ -31,9 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
     }
-        // User not found
         $stmt->close();
         $conn->close();
-    
 }
 ?>

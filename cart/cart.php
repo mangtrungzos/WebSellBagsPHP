@@ -12,8 +12,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="../assest/main.css">
     <link rel="stylesheet" href="../assest/base.css">
+    <link rel="stylesheet" href="../assest/style.css">
     <meta data-react-helmet="true" property="og:title" content="Design Bags for Women | NET-A-PORTER">
     <title>Design Bags for Women</title>
+    <style>
+        .product-info span {
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="app">
@@ -938,5 +944,22 @@
     <script src="./JS/slide.show.js"></script>
     <script src="./JS/handleClick.js"></script>
     <script src="./JS/Product.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadCartItems();
+        });
+
+        function loadCartItems() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '../controller/getProduct.php', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Hiển thị thông tin sản phẩm trong div cartItems
+                    document.getElementById('cart').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
 </body>
 </html>

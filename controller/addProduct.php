@@ -1,32 +1,29 @@
 <?php 
-session_start();
-
 include '../DB/ConnectDB.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $product_id = $_PORT["product"];
-    $quantity = $_PORT["quantity"];
-    $user_id = $_SESSION["user_id"];
-    $product_image = $_PORT["product_image"];
-    $product_price = $_PORT["product_price"];
-    $product_brand = $_PORT["product_brand"];
-    $product_color = $_PORT["product_color"];
-    try {
-        $stmt = $conn->prepare("INSERT INTO giohang (product_id, quantity, user_id, product_image, product_price, product_brand, product_color) VALUES ('$product_id', '$quantity', '$user_id', '$product_image', '$product_price', '$product_brand', '$product_color')");
-    
-        $stmt->bindParam(1, $product_id);
-        $stmt->bindParam(2, $quantity);
-        $stmt->bindParam(3, $user_id);
-        $stmt->bindParam(4, $product_image);
-        $stmt->bindParam(5, $product_price);
-        $stmt->bindParam(6, $product_brand);
-        $stmt->bindParam(7, $product_color);
-    
-        $stmt->execute();
-        echo "Sản phẩm đã được thêm vào giỏ hàng thành công.";
+    $productImage = $_POST['product_image'];
+    $productBrand = $_POST['product_brand'];
+    $productName = $_POST['product_name'];
+    $singleBadge = $_POST['product_singleBadge'];
+    $productColor = $_POST['product_color'];
+    $productPrice = $_POST['product_price'];
 
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+    $productPrice = str_replace('$', '', $productPrice);
+    $productPrice = str_replace(',', '', $productPrice);
+
+    $sql = "INSERT INTO cart (product_image, product_brand, product_name, product_singleBadge, product_color, product_price)
+            VALUES ('$productImage', '$productBrand', '$productName', '$singleBadge', '$productColor', '$productPrice')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Product added to cart successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+} else {
+    // Handle non-POST requests
+    http_response_code(405); // Method Not Allowed
+    echo "Invalid request method";
 }
 ?>

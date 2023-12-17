@@ -49,3 +49,15 @@
     padding: 10px 0;
 }
 
+.cart-img {
+    display: grid;
+    grid-template-columns: 107px 897px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-info span{
+    display: flex;
+    flex-direction: column;
+}

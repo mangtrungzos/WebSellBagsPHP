@@ -736,129 +736,125 @@
         </header>
         <div class="container">
             <div class="content">
-                <div class="productDetails">
-                    <!-- <form action="addProuct.php" method="POST">
-
-
-                    </form> -->
-                    <div class="slide-show">
-                        <div class="list-images">
-                            <div class="img-detail">
-                                <img class="imgdetails imgdetailss" src="../image/ProductDetail/1.png" alt="Product Image" >
+                <div class="productDetails" id="addToCartForm">
+                        <div class="slide-show">
+                            <div class="list-images">
+                                <div class="img-detail">
+                                    <img class="imgdetails imgdetailss" src="../image/ProductDetail/1.png" alt="Product Image" >
+                                </div>
+                                <div class="img-detail">
+                                    <img class="imgdetails" src="../image/ProductDetail/2.png" alt="" >
+                                </div>
+                                <div class="img-detail">
+                                    <img class="imgdetails" src="../image/ProductDetail/3.png" alt="" >
+                                </div>
+                                <div class="img-detail">
+                                    <img class="imgdetails" src="../image/ProductDetail/4.png" alt="" >
+                                </div>
+                                <div class="img-detail">
+                                    <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
+                                </div>
+                                <div class="img-detail">
+                                    <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
+                                </div>
                             </div>
-                            <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/2.png" alt="" >
+                            <div class="btns">
+                                <div class="btn-left btn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="btn-right btn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
-                            <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/3.png" alt="" >
-                            </div>
-                            <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/4.png" alt="" >
-                            </div>
-                            <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
-                            </div>
-                            <div class="img-detail">
-                                <img class="imgdetails" src="../image/ProductDetail/5.png" alt="" >
-                            </div>
-                        </div>
-                        <div class="btns">
-                            <div class="btn-left btn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </div>
-                            <div class="btn-right btn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="shopMore">
-                            <p class="shopMore__heading upperCase">view more</p>
-                            <div class="shopMore__link">
-                                <a href="#" class="shopMore1__link upperCase">the row</a>
-                                <a href="#" class="shopMore1__link">Bags</a>
-                                <a href="#" class="shopMore1__link">Tote Bags</a>
+                            <div class="shopMore">
+                                <p class="shopMore__heading upperCase">view more</p>
+                                <div class="shopMore__link">
+                                    <a href="#" class="shopMore1__link upperCase">the row</a>
+                                    <a href="#" class="shopMore1__link">Bags</a>
+                                    <a href="#" class="shopMore1__link">Tote Bags</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="productDetail__selectInfo">
-                        <div class="productDetail__basicInfo">
-                            <div class="singlebadge upperCase">
-                                low stock
+                        <div class="productDetail__selectInfo">
+                            <div class="productDetail__basicInfo">
+                                <div class="singlebadge upperCase">
+                                    low stock
+                                </div>
+                                <div class="productInfomation">
+                                    <a href="#">
+                                        <h1 class="productInfomation--brand">THE ROW</h1>
+                                    </a>
+                                    <p class="productInfomation__name">N/S Park large suede tote</p>
+                                </div>
+                                <div class="priceProduct">$2,450</div>
                             </div>
-                            <div class="productInfomation">
-                                <a href="#">
-                                    <h1 class="productInfomation--brand">THE ROW</h1>
-                                </a>
-                                <p class="productInfomation__name">N/S Park large suede tote</p>
-                            </div>
-                            <div class="priceProduct">$2,450</div>
-                        </div>
-                        <div class="productDetail">
-                            <div class="productDetail__colours">
-                                <p class="productDetail__colours--heading">Color: 
-                                    <span class="productDetail__colours--span">
-                                        Dark brown
+                            <div class="productDetail">
+                                <div class="productDetail__colours">
+                                    <p class="productDetail__colours--heading">Color: 
+                                        <span class="productDetail__colours--span">
+                                            Dark brown
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="sizelabel">
+                                    <span class="onesize__label"> Size : 
+                                        <span class="onesize__label--one">
+                                            One size (Low stock)
+                                        </span>
                                     </span>
-                                </p>
-                            </div>
-                            <div class="sizelabel">
-                                <span class="onesize__label"> Size : 
-                                    <span class="onesize__label--one">
-                                        One size (Low stock)
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="button__wrapper">
-                                <div class="productDetail__addbButton--addb">
-                                    <button class="button__addToBag" onclick="addToCart()">
-                                        Add to Cart
-                                    </button>
                                 </div>
-                                <div class="productDetail__addButton--wl">
-                                    <button class="button__addTowl">
-                                        <i class="fa-regular fa-star addButton__wlStar"></i>
-                                        Add to Wish List
-                                    </button>
-                                </div>
-                                <div class="productDetail__editor">
-                                    <div class="according__section">
-                                        <div class="editorAccording upperCase">
-                                            <i class="fa-solid fa-chevron-up according__down"></i>
-                                            editor's note 
+                                <div class="button__wrapper">
+                                    <div class="productDetail__addbButton--addb">
+                                        <button class="button__addToBag" onclick="addToCart()">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div class="productDetail__addButton--wl">
+                                        <button class="button__addTowl">
+                                            <i class="fa-regular fa-star addButton__wlStar"></i>
+                                            Add to Wish List
+                                        </button>
+                                    </div>
+                                    <div class="productDetail__editor">
+                                        <div class="according__section">
+                                            <div class="editorAccording upperCase">
+                                                <i class="fa-solid fa-chevron-up according__down"></i>
+                                                editor's note 
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="according__section according__sectionContent">
-                                        <p>The Row's 'N/S Park' tote captures the clean lines of the nonchalant label, balancing the perfect amount of structure and slouch. Crafted from soft suede, the roomy interior makes it perfect for commutes and going to your favorite spots. The bag is finished with the label's moniker, in a subtle scale of course.</p>
-                                    </div>
-                                    <div class="according__section according__sectionSize">
-                                        <div class="editorAccording upperCase">
-                                            <i class="fa-solid fa-chevron-down according__down"></i>
-                                            size & fit
+                                        <div class="according__section according__sectionContent">
+                                            <p>The Row's 'N/S Park' tote captures the clean lines of the nonchalant label, balancing the perfect amount of structure and slouch. Crafted from soft suede, the roomy interior makes it perfect for commutes and going to your favorite spots. The bag is finished with the label's moniker, in a subtle scale of course.</p>
                                         </div>
-                                    </div>
-                                    <div class="according__section according__sectionDetail">
-                                        <div class="editorAccording upperCase">
-                                            <i class="fa-solid fa-chevron-down according__down"></i>
-                                            details & care
+                                        <div class="according__section according__sectionSize">
+                                            <div class="editorAccording upperCase">
+                                                <i class="fa-solid fa-chevron-down according__down"></i>
+                                                size & fit
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="according__section according__SectionDelivery">
-                                        <div class="editorAccording upperCase">
-                                            <i class="fa-solid fa-chevron-down according__down"></i>
-                                            delivery & returns
+                                        <div class="according__section according__sectionDetail">
+                                            <div class="editorAccording upperCase">
+                                                <i class="fa-solid fa-chevron-down according__down"></i>
+                                                details & care
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="partNumber">
-                                        Product Code 
-                                        <div class="part__number">
-                                            <span>0393</span>
-                                            <span>400</span>
-                                            <span>682</span>
+                                        <div class="according__section according__SectionDelivery">
+                                            <div class="editorAccording upperCase">
+                                                <i class="fa-solid fa-chevron-down according__down"></i>
+                                                delivery & returns
+                                            </div>
+                                        </div>
+                                        <div class="partNumber">
+                                            Product Code 
+                                            <div class="part__number">
+                                                <span>0393</span>
+                                                <span>400</span>
+                                                <span>682</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1032,6 +1028,37 @@
     
     <script src="../JS/handleClick.js"></script>
     <script src="../JS/slide.show.js"></script>
-    <script src="../JS/addToCart.js"></script>
+    <script>
+        function addToCart() {
+            var productImage = document.querySelector('.imgdetailss').src;
+            var productBrand = document.querySelector('.productInfomation--brand').textContent;
+            var productName = document.querySelector('.productInfomation__name').textContent;
+            var singleBadge = document.querySelector('.singlebadge').textContent;
+            var productColor = document.querySelector('.productDetail__colours--span').textContent;
+            var productPrice = document.querySelector('.priceProduct').textContent;
+        
+            // document.getElementById('addToCartForm')
+        
+                var formData = new FormData();
+                formData.append('product_image', productImage);
+                formData.append('product_brand', productBrand);
+                formData.append('product_name', productName);
+                formData.append('product_singleBadge', singleBadge);
+                formData.append('product_color', productColor);
+                formData.append('product_price', productPrice);
+        
+        
+            // Send request AJAX to add product into cart
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '../controller/addProduct.php', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Show notifications or update interface if necessary
+                    alert(xhr.responseText);
+                }
+            };
+            xhr.send(formData);
+        }
+    </script>
 </body>
 </html>
