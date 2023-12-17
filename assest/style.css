@@ -1,0 +1,51 @@
+.loginList{
+    text-decoration: none;
+    color: #111;
+    font: 14px/18px 'AkkuratPro',Sans-Serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.header_loginList{
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.header_loginList:nth-child(6) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.header__account-signout{
+    display: block;
+    margin: 28px auto;
+    width: 100%;
+    height: 40px;
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}   
+
+.header__account-wlst{
+    display: block;
+    margin: 28px 25px;
+    width: 385px;
+    height: 40px;
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header__account-wlst::after{
+    border: 1px solid #cbcbcb;
+    padding: 10px 0;
+}
+

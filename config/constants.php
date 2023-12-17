@@ -1,6 +1,4 @@
 <?php
-    
-
     // Create Constants for Store 
     if (!defined('SITEURLPRT')) {
         define('STIEURLPRT', 'http://localhost/WebSellBagsPHP/client/');

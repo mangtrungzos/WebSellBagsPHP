@@ -43,9 +43,9 @@
                                             </header>
                                             <div class="header__account-inf">
                                                 <p class="text">
-                                                    <label for="username" class="header__account-label">Email Address</label>
+                                                    <label for="email" class="header__account-label">Email Address</label>
                                                 </p>
-                                                <input type="text" id="username" name="username" class="header__account-email">
+                                                <input type="text" id="email" name="email" class="header__account-email">
                                                 <p class="text">
                                                     <label for="password" class="header__account-label">Password</label>
                                                 </p>
@@ -56,7 +56,7 @@
                                                 </div>
                                                 <div class="header__account-ftr">
                                                     <span class="account-ftr">Don't have an account?</span>
-                                                    <a href="./client/pages/register.html" class="account-ftr-link">Register now</a>
+                                                    <a href="<?php echo SITEURLHOME?>register.php" class="account-ftr-link">Register now</a>
                                                 </div>
                                             </div>
                                         </form>

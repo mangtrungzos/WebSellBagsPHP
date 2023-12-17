@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="header__navbar-overflow"></div>
+                            <div class="header__navbar-overflow" style="top: 438px"></div>
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd2">
                             <div class="header-category-link-scd1">

@@ -9,7 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
-    $stmt->execute();
+
+    if (!$stmt->execute()) {
+        echo "Error: " . $stmt->error;
+        exit();
+    }
+    
     $result = $stmt->get_result();
 
     if ($result->num_rows === 1) {
@@ -17,25 +22,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verify the entered password against the hashed password stored in the database
         if (password_verify($password, $user['password'])) {
-            // Password is correct, set session and redirect
-            $_SESSION["email"] = $email;
-            header("Location: ./index.php");
-            $stmt->close();
-            $conn->close();
+            $_SESSION["email"] = $user['email'];
+            echo '<script>alert("Registration successful!"); window.location.href = "../pages/bags.php";</script>' ;
             exit();
         } else {
             // Incorrect password
-            $stmt->close();
-            $conn->close();
             header("Location: loginAcc.php?error=1");
             exit();
         }
-    } else {
+    }
         // User not found
         $stmt->close();
         $conn->close();
-        header("Location: loginAcc.php?error=1");
-        exit();
-    }
+    
 }
 ?>

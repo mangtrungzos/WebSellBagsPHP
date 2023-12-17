@@ -20,15 +20,12 @@
     <img src="../image/poster/Black Minimal Motivation Quote LinkedIn Banner.png" alt="" style="width: 1512px">
         <header class="header">
             <div class="grid wide">
-                
-                </div>
                 <div class="header__primary">
                     <div class="header__navbar-primary">
                         <ul class="header__navbar-list header__logo">
-                            <a href="../client/pages/home.html" class="header__navbar-logo">
+                            <a href="<?php echo SITEURLAD; ?>index.php" class="header__navbar-logo">
                                 NET - A - PORTER
                             </a> 
-                            
                         </ul>
                         <div class="header__navbar-listUser ">
                             <ul class="header__navbar-list header__navbar-none ">

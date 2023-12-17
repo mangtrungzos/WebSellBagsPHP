@@ -27,7 +27,6 @@
                             <a href="<?php echo SITEURLAD; ?>index.php" class="header__navbar-logo">
                                 NET - A - PORTER
                             </a> 
-                            
                         </ul>
                         <div class="header__navbar-listUser ">
                             <ul class="header__navbar-list header__navbar-none ">

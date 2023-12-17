@@ -31,7 +31,7 @@
 
 .header__navbar-overflow{
     position: fixed;
-    top: 529px;
+    top: 438px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -858,7 +858,7 @@
     background-color: var(--white-color);
     position: absolute;
     width: 435px;
-    height: 470px;
+    height: auto;
     top: 60px;
     right: 30px;
     box-shadow: 0 2px 4px #e5e5e5;
@@ -2469,6 +2469,7 @@
     font-weight: 400;
     margin-bottom: 10px;
 }
+
 
 
 .footerlayout{

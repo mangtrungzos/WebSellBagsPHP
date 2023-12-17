@@ -1,8 +1,5 @@
 <?php
-
-if (!isset($_SESSION)) {
-    session_start();
-}
+session_start();
 define ('LOCALHOST', 'localhost');
 define('DB_NAME', 'WebSellBags');
 define('DB_USERNAME', 'root');
