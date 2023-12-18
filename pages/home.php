@@ -1,6 +1,5 @@
 <?php include("../config/constants.php"); ?>
 <?php include("../controller/loginAcc.php"); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -785,7 +784,7 @@
                                 <a href="#" class="prct-link">
                                     <div class="prct">
                                         <div class="prct-img">
-                                            <img class="first" src="../image/bag11.png" alt="" width="205px" height="307px" draggable="false">
+                                            <img class="first" src="../image/bag7.png" alt="" width="205px" height="307px" draggable="false">
                                         </div>
                                         <h6 class="prct-tittle">ALEXANDER MCQUEEN</h6>
                                     </div>
@@ -1074,8 +1073,8 @@
         </footer>
     </div>
 
-    <script src="./JS/hover.js"></script>
-    <script src="./JS/handleClick.js"></script>
-    <script src="../../JS/slideShowPrct.js"></script>
+    <script src="../JS/hover.js"></script>
+    <script src="../JS/handleClick.js"></script>
+    <script src="../JS/slideShowPrct.js"></script>
 </body>
 </html>

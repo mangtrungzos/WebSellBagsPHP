@@ -1,0 +1,155 @@
+
+.img-user{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.img-user:hover{
+    cursor: pointer;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #3891e8;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-name{
+    font: 17px/18px 'montserrat', sans-serif;
+    font-weight: 500;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logout{
+    color: #fff;
+    text-decoration: none;
+    font: 17px/18px 'montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.main{
+    /* position: relative; */
+    
+}
+
+.container{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table-head{
+    width: 780px;
+    height: 50px;
+    color: white;
+    background-color: rgb(80,70,229);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.add-product{
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addproductnew{
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'montserrat', sans-serif;
+    cursor: pointer;
+    background-color: #3891e8;
+    border: 2px solid #cbcbcb;
+}
+
+.tbl{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl .table-head tr th{
+    font-size: 0.9rem;
+    padding: .8rem;
+    letter-spacing: 0.2rem;
+    vertical-align: top;
+    border: 1px solid #aab7b8;
+}
+
+.tbl .table-body tr th{
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #aab7b8;
+}
+
+.addproduct-form input{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerProduct{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+   padding: 10px; 
+   border: 1px solid #3891e8;
+   border-radius: 3px;
+}
+
+.productInfo{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo input,
+textarea{
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+}
+
+.productInfo textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+.productLabel{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font: 14px/18px 'AkkuratPro',Sans-Serif;
+    font-weight: 500;
+}
+
+.productInfos{
+    margin-bottom: 10px;
+}
+
+.product-img{
+    border: none;
+}
+
+.addProduct-btn{
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #cbcbcb;
+    cursor: pointer;
+}

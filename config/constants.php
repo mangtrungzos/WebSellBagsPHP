@@ -22,5 +22,6 @@
 
     define('SITEURLREGISTER', 'http://localhost/WebSellBagsPHP/pages/');
     define('SITEURLCONTROLLER', 'http://localhost/WebSellBagsPHP/controller/');
+    define('SITEURLADMIN', 'http://localhost/WebSellBagsPHP/adminPHP/');
     
 ?>
