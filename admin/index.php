@@ -1,3 +1,4 @@
+<?php include('../adminPHP/getProducts.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,9 @@
     <link rel="stylesheet" href="../assest/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assest/admins.css">
+    <link rel="stylesheet" href="../assest/adminss.css">
     <title>Admin Product</title>
+    
 </head>
 <body>
     <div class="main">
@@ -39,7 +42,7 @@
                     <tr>
                         <th class="border-left">ID</th>
                         <th class="border-left">Name</th>
-                        <th class="border-left">Image</th>
+                        <th class="border-left" style="width: 300px">Image</th>
                         <th class="border-left">Description</th>
                         <th class="border-left">Quantity</th>
                         <th class="border-left">Edit</th>
@@ -53,6 +56,10 @@
     </div>
 
 
-    <script src="../JS/addProduct.js"></script>
+    <script>
+        function addProduct() {
+            window.location.href = "../pages/addProduct.php";
+        }
+    </script>
 </body>
 </html>

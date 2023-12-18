@@ -67,3 +67,4 @@ function toggleRecomended() {
         icons.style.transform = 'rotate(0deg)';
     }
 }
+

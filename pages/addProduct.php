@@ -39,9 +39,8 @@
                     <input type="text" id="productName" name="productName" required>
                 </div>
                 
-                
                 <div class="productInfos">
-                    <label class="productLabel" for="productQuantity">Product Image</label>
+                    <label class="productLabel" for="productImage">Product Image</label>
                     <input type="file" id="productImage" name="productImage" accept="image/*" required>
                 </div>
 
@@ -55,23 +54,21 @@
                     <input type="number" id="productQuantity" name="productQuantity" required>
                 </div>
         
-                <button class="addProduct-btn" type="button" onclick="addProduct()">Add Product</button>
+                <button class="addProduct-btn" type="submit" onclick="addProduct()">Add Product</button>
+                <button class="addProduct-btn" type="button" onclick="back()">Back</button>
             </form>
         </div>
     </div>
-
-
             
-    <!-- <script src="../JS/addProduct.js"></script> -->
     <script>
         function addProduct() {
             // Collect form data
            const productName = document.getElementById('productName').value;
-           const productImage = document.getElementById('productImage').files[0];
+           const productImageInput = document.getElementById('productImage');
+           const productImage = productImageInput.files[0];
            const productDescription = document.getElementById('productDescription').value;
            const productQuantity = document.getElementById('productQuantity').value;
 
-            // Validate form data (you can add more validation as needed)
 
             // Send data to server using AJAX (you may use Fetch API or other libraries)
            const formData = new FormData();
@@ -79,12 +76,14 @@
             formData.append('productName', productName);
             formData.append('productDescription', productDescription);
             formData.append('productQuantity', productQuantity);
-            formData.append('productImage', productImage);
+            if (productImage) {
+                // Only append the image if it's selected
+                formData.append('productImage', productImage);
+            }
             
             
             const xhr = new XMLHttpRequest();
             xhr.open('POST', '../adminPHP/addProducts.php', true);
-            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
             xhr.onload = function () {
                 if (xhr.status === 200) {
@@ -96,10 +95,14 @@
             };
 
             // Prepare data for POST request
-            const data = `productName=${productName}&productDescription=${productDescription}&productQuantity=${productQuantity}&productImage=${productImage}`;
 
             // Send the request
-            xhr.send(data);
+            xhr.send(formData);
+        }
+    </script>
+    <script>
+        function back() {
+            window.location.href = '../admin/index.php'
         }
     </script>
 </body>

@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify the entered password against the hashed password stored in the database
         if ($password === $user['password']) {
             $_SESSION["username"] = $user['username'];
-            echo '<script>alert("Login successful!"); window.location.href = "#";</script>' ;
+            echo '<script>alert("Login successful!"); window.location.href = "../pages/addProduct.php";</script>' ;
             exit();
         } else {
             // Incorrect password

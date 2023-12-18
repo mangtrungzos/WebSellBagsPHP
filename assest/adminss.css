@@ -1,0 +1,26 @@
+.table-body{
+    width: 1200px;
+    position: absolute;
+    top: 261px;
+    left: 165px;
+    
+}
+
+.table-body tr th{
+    border: 1px solid #ccc;
+}
+
+
+
+.table-head{
+    width: 1200px;
+
+}
+
+.table-body tr th{
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #000;
+}
