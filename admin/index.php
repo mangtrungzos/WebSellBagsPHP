@@ -27,7 +27,7 @@
                         <img src="../image/poster/account.jpg" alt="" class="img-user">
                         <span class="user-name">vu trong sang</span>
                         <div class="user-logout">
-                            <a href="#" class="logout">Logout</a>
+                            <a href="../pages/adminLogin.php" class="logout">Logout</a>
                         </div>
                     </div>
                 </div>
@@ -35,16 +35,16 @@
         </header>
         <div class="container">
             <div class="add-product">
-                <button class="addproductnew" onclick="addProduct()">Them San pham</button>
+                <button class="addproductnew" onclick="addProduct()">Thêm Sản Phẩm</button>
             </div>
             <div class="tbl">
                 <table class="table-head" id="product-table">
                     <tr>
-                        <th class="border-left">ID</th>
-                        <th class="border-left">Name</th>
-                        <th class="border-left" style="width: 300px">Image</th>
+                        <th class="border-left" style="width: 55px">ID</th>
+                        <th class="border-left" style="width: 130px">Name</th>
+                        <th class="border-left" style="width: 150px">Image</th>
                         <th class="border-left">Description</th>
-                        <th class="border-left">Quantity</th>
+                        <th class="border-left" style="width: 187px">Price</th>
                         <th class="border-left">Edit</th>
                         <th class="border-left">Delete</th>
                     </tr>
@@ -60,6 +60,8 @@
         function addProduct() {
             window.location.href = "../pages/addProduct.php";
         }
-    </script>
+        </script>
+    <script src="../JS/editProduct.js"></script>
+    <script src="../JS/deleteProduct.js"></script>
 </body>
 </html>

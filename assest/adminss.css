@@ -2,15 +2,9 @@
     width: 1200px;
     position: absolute;
     top: 261px;
-    left: 165px;
+    left: 163px;
     
 }
-
-.table-body tr th{
-    border: 1px solid #ccc;
-}
-
-
 
 .table-head{
     width: 1200px;
@@ -23,4 +17,27 @@
     font-weight: normal;
     text-align: center;
     border: 1px solid #000;
+}
+
+.tbodyProduct{
+    border: 1px solid #000;
+}
+
+.editBtn {
+    margin: 0 40px 0 20px;
+    width: 80px;
+    cursor: pointer;
+    height: 50px;
+    
+}
+
+.deleteBtn{
+    margin-left: 30px;
+    width: 80px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.addproductnew{
+    border-radius: 3px;
 }

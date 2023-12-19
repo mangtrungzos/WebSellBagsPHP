@@ -82,11 +82,13 @@
 }
 
 .tbl .table-head tr th{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: .8rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1px;
     vertical-align: top;
     border: 1px solid #aab7b8;
+    font-family: 'AkkuratPro'sans-serif;
+
 }
 
 .tbl .table-body tr th{

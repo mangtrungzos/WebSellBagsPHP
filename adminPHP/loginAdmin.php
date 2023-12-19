@@ -26,11 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify the entered password against the hashed password stored in the database
         if ($password === $user['password']) {
             $_SESSION["username"] = $user['username'];
-            echo '<script>alert("Login successful!"); window.location.href = "../pages/addProduct.php";</script>' ;
+            echo '<script>alert("Login successful!"); window.location.href = "../admin/index.php";</script>' ;
             exit();
         } else {
             // Incorrect password
-            header("Location: loginAcc.php?error=1");
+            echo '<script>alert("Login Failed!"); window.location.href = "../pages/adminLogin.php";</script>' ;
+
             exit();
         }
     }

@@ -1,3 +1,4 @@
+<?php include('../adminPHP/editProducts.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +34,17 @@
         <div class="containerProduct">
             <h1>Add Product</h1>
 
-            <form id="addProductForm"  class="addproduct-form" method="POST" enctype="multipart/form-data" >
+            <form id="addProductForm" class="addproduct-form" action="" method="POST" enctype="multipart/form-data">
+                <div class="productInfo">
+                    <label class="productLabel" for="productId">Product Id</label>
+                    <input type="text" id="productId" name="productId" required>
+                </div>
+
                 <div class="productInfo">
                     <label class="productLabel" for="productName">Product Name</label>
                     <input type="text" id="productName" name="productName" required>
                 </div>
-                
+
                 <div class="productInfos">
                     <label class="productLabel" for="productImage">Product Image</label>
                     <input type="file" id="productImage" name="productImage" accept="image/*" required>
@@ -51,56 +57,20 @@
 
                 <div class="productInfo">
                     <label class="productLabel" for="productQuantity">Product Quantity</label>
-                    <input type="text" id="productQuantity" name="productQuantity" required>
+                    <input type="number" id="productQuantity" name="productQuantity" required>
                 </div>
-        
-                <button class="addProduct-btn" type="submit" onclick="addProduct()">Add Product</button>
+
+                <button class="addProduct-btn" type="submit">Add Product</button>
                 <button class="addProduct-btn" type="button" onclick="back()">Back</button>
             </form>
+
         </div>
     </div>
-    <script>
-        function addProduct() {
-            // Collect form data
-           const productName = document.getElementById('productName').value;
-           const productImageInput = document.getElementById('productImage');
-           const productImage = productImageInput.files[0];
-           const productDescription = document.getElementById('productDescription').value;
-           const productQuantity = document.getElementById('productQuantity').value;
-
-
-            // Send data to server using AJAX (you may use Fetch API or other libraries)
-           const formData = new FormData();
-            
-            formData.append('productName', productName);
-            formData.append('productDescription', productDescription);
-            formData.append('productQuantity', productQuantity);
-            if (productImage) {
-                // Only append the image if it's selected
-                formData.append('productImage', productImage);
-            }
-            
-            
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', '../adminPHP/addProducts.php', true);
-
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    // Process the response from the server if needed
-                    alert(xhr.responseText);
-                } else {
-                    alert('Error adding product. Please try again.');
-                }
-            };
-
-            // Send the request
-            xhr.send(formData);
-        }
-    </script>
     <script>
         function back() {
             window.location.href = '../admin/index.php'
         }
     </script>
+
 </body>
 </html>

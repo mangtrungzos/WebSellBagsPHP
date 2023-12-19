@@ -2375,6 +2375,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .Notification__message{

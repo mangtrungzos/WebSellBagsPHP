@@ -1,4 +1,5 @@
 <?php include("../config/constants.php"); ?>
+<?php include("../controller/totalProduct.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -753,7 +754,9 @@
                     </div>
                     <div class="total-product">
                         <span class="checkout-oderSummary">Order Summary</span>
-                        <ul id="total-price"></ul>
+                        <ul id="total-price">
+                            
+                        </ul>
                         <div class="Notification--info">
                             <img src="../image/icon/exclamation.png" alt="" class="excl--icon">
                             <span class="Notification__message">Local taxes may apply at checkout</span>

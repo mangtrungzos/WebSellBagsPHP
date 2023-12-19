@@ -60,7 +60,7 @@
                                             <div class="header_loginList">
                                                 <a href="" class="loginList">Returns</a>
                                             </div>
-                                            <button type="submit" class="header__account-signout">Sign out</button>
+                                            <button type="submit" class="header__account-signout" onclick="signOut()">Sign out</button>
                                         </div>
                                     </div>
                                 </li>
@@ -1601,6 +1601,10 @@
 
     <script src="../JS/hover.js"></script>
     <script src="../JS/handleClick.js"></script>
-    
+    <script>
+        function signOut() {
+            window.location.href = "home.php";
+        }
+    </script>
 </body>
 </html>

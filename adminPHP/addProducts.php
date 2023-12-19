@@ -10,8 +10,6 @@ try {
         $productDescription = $_POST["productDescription"];
         $productQuantity = $_POST["productQuantity"];
 
-        // Validate the data (you can add more validation as needed)
-
         // Handle file upload
         $targetDirectory = "uploads/";
 

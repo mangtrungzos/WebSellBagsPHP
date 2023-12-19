@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssssss", $email, $hashed_password, $first_name, $last_name, $dob_month, $dob_day, $dob_year);
 
     if ($stmt->execute()) {
-        echo '<script>alert("Registration successful!"); window.location.href = "../pages/register.php";</script>' ;
+        echo '<script>alert("Registration successful!"); window.location.href = "../pages/home.php";</script>' ;
     } else {
         echo '<script>alert("Registration failed: ' . $stmt->error . '");</script>';
     }
